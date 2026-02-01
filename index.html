@@ -205,9 +205,101 @@
         border-radius: 20px;
         font-size: 12px;
         color: var(--tg-theme-hint-color);
-        margin-top: 20px;
+        margin-top: 10px;
         width: 100%;
         text-align: center;
+      }
+
+      /* Sepet Bölümü */
+      .basket-container {
+        margin-top: 24px;
+        border-top: 1.5px dashed var(--tg-theme-secondary-bg-color);
+        padding-top: 24px;
+        animation: fadeInUp 0.8s ease-out;
+      }
+
+      .basket-title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .basket-item {
+        background: var(--tg-theme-secondary-bg-color);
+        border-radius: 12px;
+        padding: 12px 16px;
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        animation: slideInRight 0.3s ease-out;
+      }
+
+      .basket-item .info {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .basket-item .name {
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .basket-item .qty {
+        font-size: 12px;
+        color: var(--tg-theme-hint-color);
+      }
+
+      .remove-btn {
+        background: #ff4d4f;
+        color: white;
+        border: none;
+        width: 24px;
+        height: 24px;
+        border-radius: 6px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+      }
+
+      .add-to-basket-btn {
+        width: 100%;
+        padding: 12px;
+        border-radius: 12px;
+        border: 2px solid var(--tg-theme-button-color);
+        background: transparent;
+        color: var(--tg-theme-button-color);
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .add-to-basket-btn:active {
+        background: var(--tg-theme-button-color);
+        color: white;
+      }
+
+      .add-to-basket-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        border-color: var(--tg-theme-hint-color);
+        color: var(--tg-theme-hint-color);
+      }
+
+      @keyframes slideInRight {
+        from { opacity: 0; transform: translateX(20px); }
+        to { opacity: 1; transform: translateX(0); }
       }
 
       /* Animations */
@@ -284,40 +376,68 @@
         </div>
       </div>
 
-      <!-- Stok Arama -->
+      <!-- Tarih Seçimi -->
       <div class="form-group">
-        <label for="stok-input">Stok (Ürün) Seçin</label>
-        <div class="input-wrapper">
-          <input
-            type="text"
-            id="stok-input"
-            placeholder="Ürün adı veya kodu yazın..."
-            autocomplete="off"
-          />
-          <div id="stok-list" class="autocomplete-list"></div>
-        </div>
+        <label for="tarih-input">Sipariş Tarihi</label>
+        <input type="date" id="tarih-input" />
       </div>
 
-      <!-- Miktar -->
-      <div class="form-group">
-        <label for="miktar-input">Miktar</label>
-        <input
-          type="number"
-          id="miktar-input"
-          placeholder="0"
-          min="1"
-          step="any"
-        />
+      <div style="border-top: 1px solid var(--tg-theme-secondary-bg-color); margin: 20px 0; padding-top: 20px;">
+        <p style="font-size: 12px; color: var(--tg-theme-hint-color); font-weight: 600; margin-bottom: 12px; text-transform: uppercase;">Ürün Ekleme</p>
+        
+        <!-- Stok Arama -->
+        <div class="form-group">
+          <label for="stok-input">Stok (Ürün) Seçin</label>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="stok-input"
+              placeholder="Ürün adı veya kodu yazın..."
+              autocomplete="off"
+            />
+            <div id="stok-list" class="autocomplete-list"></div>
+          </div>
+        </div>
+
+        <!-- Miktar -->
+        <div class="form-group">
+          <label for="miktar-input">Miktar</label>
+          <input
+            type="number"
+            id="miktar-input"
+            placeholder="0"
+            min="1"
+            step="any"
+          />
+        </div>
+
+        <button id="add-basket-btn" class="add-to-basket-btn" disabled>
+          <span>+ Sepete Ekle</span>
+        </button>
+      </div>
+
+      <!-- Sepet Listesi -->
+      <div id="basket-section" class="basket-container" style="display: none;">
+        <div class="basket-title">
+          <span>Sipariş Sepeti</span>
+          <span id="basket-count" style="font-size: 12px; background: var(--tg-theme-button-color); color: white; padding: 2px 8px; border-radius: 10px;">0</span>
+        </div>
+        <div id="basket-list"></div>
       </div>
 
       <button id="submit-btn" class="send-btn" disabled>
         <span class="spinner" id="btn-spinner"></span>
-        <span>Siparişi Tamamla</span>
+        <span>Siparişi Onayla ve Gönder</span>
       </button>
 
       <div class="summary-badge" id="order-id-display">
         Sipariş ID: Bekleniyor...
       </div>
+
+      <div class="summary-badge" id="order-id-display">
+        Sipariş ID: Bekleniyor...
+      </div>
+    </div>
     </div>
 
     <script>
@@ -335,9 +455,14 @@
       // UI Elementleri
       const cariInput = document.getElementById("cari-input");
       const cariList = document.getElementById("cari-list");
+      const tarihInput = document.getElementById("tarih-input");
       const stokInput = document.getElementById("stok-input");
       const stokList = document.getElementById("stok-list");
       const miktarInput = document.getElementById("miktar-input");
+      const addBasketBtn = document.getElementById("add-basket-btn");
+      const basketSection = document.getElementById("basket-section");
+      const basketList = document.getElementById("basket-list");
+      const basketCount = document.getElementById("basket-count");
       const submitBtn = document.getElementById("submit-btn");
       const orderIdDisplay = document.getElementById("order-id-display");
       const btnSpinner = document.getElementById("btn-spinner");
@@ -345,6 +470,7 @@
       // Seçilen değerler
       let selectedCari = null;
       let selectedStok = null;
+      let basket = [];
       let currentOrderId = "";
 
       // URL'den veya başlangıç parametresinden veri alma
@@ -376,23 +502,27 @@
           };
         }
 
+        // Bugünün tarihini varsayılan yap
+        const today = new Date().toISOString().split("T")[0];
+        tarihInput.value = today;
+
         // Arama kutularını güncelle
         setupAutocomplete(cariInput, cariList, preloadData.cariler, "cari");
         setupAutocomplete(stokInput, stokList, preloadData.stoklar, "stok");
         generateOrderId();
       }
 
-      // Sipariş ID Oluşturma: Q + YYMMDDHHmm + Random2Hane
+      // Sipariş ID Oluşturma: Q + YYYYMMDDHHmm + Random2Hane = 1 + 4 + 2 + 2 + 2 + 2 + 2 = 15 Karakter
       function generateOrderId() {
         const now = new Date();
-        const yy = String(now.getFullYear()).slice(-2);
+        const yyyy = String(now.getFullYear());
         const mm = String(now.getMonth() + 1).padStart(2, "0");
         const dd = String(now.getDate()).padStart(2, "0");
         const hh = String(now.getHours()).padStart(2, "0");
         const min = String(now.getMinutes()).padStart(2, "0");
         const rand = String(Math.floor(Math.random() * 90) + 10);
 
-        currentOrderId = `Q${yy}${mm}${dd}${hh}${min}${rand}`;
+        currentOrderId = `Q${yyyy}${mm}${dd}${hh}${min}${rand}`;
         orderIdDisplay.innerText = `Sipariş ID: ${currentOrderId}`;
       }
 
@@ -447,8 +577,11 @@
 
       function validateForm() {
         const miktar = parseFloat(miktarInput.value);
-        const isValid = selectedCari && selectedStok && miktar > 0;
-        submitBtn.disabled = !isValid;
+        const isAddValid = selectedStok && miktar > 0;
+        addBasketBtn.disabled = !isAddValid;
+
+        const isSubmitValid = selectedCari && basket.length > 0 && tarihInput.value;
+        submitBtn.disabled = !isSubmitValid;
 
         // Eğer inputlar elle silindiyse seçileni temizle
         if (cariInput.value === "") selectedCari = null;
@@ -456,6 +589,61 @@
       }
 
       miktarInput.addEventListener("input", validateForm);
+      tarihInput.addEventListener("change", validateForm);
+      cariInput.addEventListener("input", validateForm);
+
+      // Sepete Ekleme
+      addBasketBtn.onclick = () => {
+        const miktar = parseFloat(miktarInput.value);
+        const item = {
+          stok_kodu: selectedStok.kod,
+          stok_adi: selectedStok.ad,
+          miktar: miktar,
+          unique_key: Date.now()
+        };
+
+        basket.push(item);
+        renderBasket();
+
+        // Ürün kısmını temizle
+        stokInput.value = "";
+        miktarInput.value = "";
+        selectedStok = null;
+        validateForm();
+
+        // Feedback
+        tg.HapticFeedback.notificationOccurred("success");
+      };
+
+      function renderBasket() {
+        basketList.innerHTML = "";
+        if (basket.length === 0) {
+          basketSection.style.display = "none";
+        } else {
+          basketSection.style.display = "block";
+          basketCount.innerText = basket.length;
+
+          basket.forEach((item, index) => {
+            const div = document.createElement("div");
+            div.className = "basket-item";
+            div.innerHTML = `
+              <div class="info">
+                <span class="name">${item.stok_adi}</span>
+                <span class="qty">${item.miktar} Adet (${item.stok_kodu})</span>
+              </div>
+              <button class="remove-btn" onclick="removeFromBasket(${item.unique_key})">&times;</button>
+            `;
+            basketList.appendChild(div);
+          });
+        }
+        validateForm();
+      }
+
+      window.removeFromBasket = (key) => {
+        basket = basket.filter(i => i.unique_key !== key);
+        renderBasket();
+        tg.HapticFeedback.impactOccurred("medium");
+      };
 
       // Gönderme İşlemi
       submitBtn.onclick = () => {
@@ -463,9 +651,12 @@
           order_id: currentOrderId,
           customer_code: selectedCari.kod,
           customer_name: selectedCari.ad,
-          product_code: selectedStok.kod,
-          product_name: selectedStok.ad,
-          quantity: miktarInput.value,
+          order_date: tarihInput.value,
+          basket: basket.map(i => ({
+            product_code: i.stok_kodu,
+            product_name: i.stok_adi,
+            quantity: i.miktar
+          })),
           timestamp: new Date().toISOString(),
         };
 
@@ -474,8 +665,6 @@
 
         // Telegram'a veriyi gönder
         tg.sendData(JSON.stringify(data));
-
-        // Not: sendData sonrası Telegram uygulamayı otomatik kapatır.
       };
 
       // Başlat
