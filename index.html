@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Mersel Sipariş Formu</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --tg-theme-bg-color: #ffffff;
+        --tg-theme-text-color: #222222;
+        --tg-theme-hint-color: #999999;
+        --tg-theme-link-color: #248bed;
+        --tg-theme-button-color: #248bed;
+        --tg-theme-button-text-color: #ffffff;
+        --tg-theme-secondary-bg-color: #efeff3;
+
+        --primary-gradient: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        --glass-bg: rgba(255, 255, 255, 0.1);
+        --glass-border: rgba(255, 255, 255, 0.2);
+        --card-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+      }
+
+      /* Telegram Theme Adaptation */
+      body.dark {
+        --glass-bg: rgba(0, 0, 0, 0.2);
+        --glass-border: rgba(255, 255, 255, 0.1);
+      }
+
+      * {
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      body {
+        font-family: "Outfit", sans-serif;
+        background-color: var(--tg-theme-secondary-bg-color);
+        color: var(--tg-theme-text-color);
+        margin: 0;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 24px;
+        animation: fadeInDown 0.8s ease-out;
+      }
+
+      .header h1 {
+        font-size: 24px;
+        margin: 0;
+        background: var(--primary-gradient);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
+      }
+
+      .header p {
+        font-size: 14px;
+        color: var(--tg-theme-hint-color);
+        margin: 4px 0 0;
+      }
+
+      .card {
+        background: var(--tg-theme-bg-color);
+        border-radius: 20px;
+        padding: 24px;
+        box-shadow: var(--card-shadow);
+        border: 1px solid var(--glass-border);
+        backdrop-filter: blur(10px);
+        animation: fadeInUp 0.8s ease-out;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      label {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: var(--tg-theme-hint-color);
+        padding-left: 4px;
+      }
+
+      .input-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+
+      input {
+        width: 100%;
+        padding: 12px 16px;
+        border-radius: 12px;
+        border: 1.5px solid var(--tg-theme-secondary-bg-color);
+        background-color: var(--tg-theme-secondary-bg-color);
+        color: var(--tg-theme-text-color);
+        font-size: 16px;
+        font-family: inherit;
+        transition: all 0.3s ease;
+        outline: none;
+      }
+
+      input:focus {
+        border-color: var(--tg-theme-button-color);
+        background-color: var(--tg-theme-bg-color);
+        box-shadow: 0 0 0 4px rgba(36, 139, 237, 0.1);
+      }
+
+      /* Autocomplete Styles */
+      .autocomplete-list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--tg-theme-bg-color);
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        max-height: 250px;
+        overflow-y: auto;
+        margin-top: 4px;
+        display: none;
+        border: 1px solid var(--tg-theme-secondary-bg-color);
+      }
+
+      .autocomplete-item {
+        padding: 12px 16px;
+        cursor: pointer;
+        transition: background 0.2s;
+        border-bottom: 1px solid var(--tg-theme-secondary-bg-color);
+        display: flex;
+        flex-direction: column;
+      }
+
+      .autocomplete-item:last-child {
+        border-bottom: none;
+      }
+
+      .autocomplete-item:hover,
+      .autocomplete-item.active {
+        background-color: var(--tg-theme-secondary-bg-color);
+      }
+
+      .autocomplete-item .title {
+        font-size: 15px;
+        font-weight: 600;
+      }
+
+      .autocomplete-item .subtitle {
+        font-size: 12px;
+        color: var(--tg-theme-hint-color);
+      }
+
+      .send-btn {
+        width: 100%;
+        padding: 16px;
+        border-radius: 16px;
+        border: none;
+        background: var(--primary-gradient);
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .send-btn:active {
+        transform: scale(0.98);
+      }
+
+      .send-btn:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+
+      .summary-badge {
+        display: inline-block;
+        padding: 4px 12px;
+        background: var(--tg-theme-secondary-bg-color);
+        border-radius: 20px;
+        font-size: 12px;
+        color: var(--tg-theme-hint-color);
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Animations */
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--tg-theme-hint-color);
+        border-radius: 10px;
+      }
+
+      /* Loading Spinner */
+      .spinner {
+        width: 20px;
+        height: 20px;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-top-color: #fff;
+        animation: spin 1s ease-in-out infinite;
+        display: none;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Mersel Sipariş</h1>
+      <p>Hızlı ve Akıllı Sipariş Yönetimi</p>
+    </div>
+
+    <div class="card">
+      <!-- Cari Arama -->
+      <div class="form-group">
+        <label for="cari-input">Cari (Müşteri) Seçin</label>
+        <div class="input-wrapper">
+          <input
+            type="text"
+            id="cari-input"
+            placeholder="Cari adı veya kodu yazın..."
+            autocomplete="off"
+          />
+          <div id="cari-list" class="autocomplete-list"></div>
+        </div>
+      </div>
+
+      <!-- Stok Arama -->
+      <div class="form-group">
+        <label for="stok-input">Stok (Ürün) Seçin</label>
+        <div class="input-wrapper">
+          <input
+            type="text"
+            id="stok-input"
+            placeholder="Ürün adı veya kodu yazın..."
+            autocomplete="off"
+          />
+          <div id="stok-list" class="autocomplete-list"></div>
+        </div>
+      </div>
+
+      <!-- Miktar -->
+      <div class="form-group">
+        <label for="miktar-input">Miktar</label>
+        <input
+          type="number"
+          id="miktar-input"
+          placeholder="0"
+          min="1"
+          step="any"
+        />
+      </div>
+
+      <button id="submit-btn" class="send-btn" disabled>
+        <span class="spinner" id="btn-spinner"></span>
+        <span>Siparişi Tamamla</span>
+      </button>
+
+      <div class="summary-badge" id="order-id-display">
+        Sipariş ID: Bekleniyor...
+      </div>
+    </div>
+
+    <script>
+      const tg = window.Telegram.WebApp;
+      tg.expand();
+      tg.ready();
+
+      // Veri Yapısı (Preload - Bot tarafından doldurulacak)
+      // Örnek veri: { cariler: [{kod: 'C01', ad: 'Müşteri A'}], stoklar: [{kod: 'S01', ad: 'Ürün X', fiyat: 100}] }
+      let preloadData = {
+        cariler: [],
+        stoklar: [],
+      };
+
+      // UI Elementleri
+      const cariInput = document.getElementById("cari-input");
+      const cariList = document.getElementById("cari-list");
+      const stokInput = document.getElementById("stok-input");
+      const stokList = document.getElementById("stok-list");
+      const miktarInput = document.getElementById("miktar-input");
+      const submitBtn = document.getElementById("submit-btn");
+      const orderIdDisplay = document.getElementById("order-id-display");
+      const btnSpinner = document.getElementById("btn-spinner");
+
+      // Seçilen değerler
+      let selectedCari = null;
+      let selectedStok = null;
+      let currentOrderId = "";
+
+      // URL'den veya başlangıç parametresinden veri alma
+      async function initData() {
+        try {
+          // preload.json dosyasını botun ürettiği yerden çekiyoruz
+          const response = await fetch("preload.json");
+          if (response.ok) {
+            preloadData = await response.json();
+            console.log("Veriler yüklendi:", preloadData);
+          } else {
+            throw new Error("Dosya bulunamadı");
+          }
+        } catch (e) {
+          console.warn(
+            "Preload dosyası yüklenemedi, test verileri kullanılıyor:",
+            e,
+          );
+          // Geliştirme/Test için fallback
+          preloadData = {
+            cariler: [
+              { kod: "120.01.001", ad: "MERSEL TEKSTIL (TEST)" },
+              { kod: "120.01.002", ad: "MÜŞTERİ B (TEST)" },
+            ],
+            stoklar: [
+              { kod: "STK001", ad: "TEST ÜRÜN A", fiyat: 10 },
+              { kod: "STK002", ad: "TEST ÜRÜN B (TEST)", fiyat: 20 },
+            ],
+          };
+        }
+
+        // Arama kutularını güncelle
+        setupAutocomplete(cariInput, cariList, preloadData.cariler, "cari");
+        setupAutocomplete(stokInput, stokList, preloadData.stoklar, "stok");
+        generateOrderId();
+      }
+
+      // Sipariş ID Oluşturma: Q + YYMMDDHHmm + Random2Hane
+      function generateOrderId() {
+        const now = new Date();
+        const yy = String(now.getFullYear()).slice(-2);
+        const mm = String(now.getMonth() + 1).padStart(2, "0");
+        const dd = String(now.getDate()).padStart(2, "0");
+        const hh = String(now.getHours()).padStart(2, "0");
+        const min = String(now.getMinutes()).padStart(2, "0");
+        const rand = String(Math.floor(Math.random() * 90) + 10);
+
+        currentOrderId = `Q${yy}${mm}${dd}${hh}${min}${rand}`;
+        orderIdDisplay.innerText = `Sipariş ID: ${currentOrderId}`;
+      }
+
+      // Autocomplete Mantığı
+      function setupAutocomplete(input, list, data, type) {
+        input.addEventListener("input", (e) => {
+          const val = e.target.value.toLowerCase();
+          list.innerHTML = "";
+
+          if (!val) {
+            list.style.display = "none";
+            validateForm();
+            return;
+          }
+
+          const filtered = data
+            .filter(
+              (item) =>
+                item.ad.toLowerCase().includes(val) ||
+                item.kod.toLowerCase().includes(val),
+            )
+            .slice(0, 10);
+
+          if (filtered.length > 0) {
+            filtered.forEach((item) => {
+              const div = document.createElement("div");
+              div.className = "autocomplete-item";
+              div.innerHTML = `
+                            <span class="title">${item.ad}</span>
+                            <span class="subtitle">${item.kod}</span>
+                        `;
+              div.onclick = () => {
+                input.value = item.ad;
+                if (type === "cari") selectedCari = item;
+                if (type === "stok") selectedStok = item;
+                list.style.display = "none";
+                validateForm();
+              };
+              list.appendChild(div);
+            });
+            list.style.display = "block";
+          } else {
+            list.style.display = "none";
+          }
+        });
+
+        // Tıklama dışı kapatma
+        document.addEventListener("click", (e) => {
+          if (e.target !== input) list.style.display = "none";
+        });
+      }
+
+      function validateForm() {
+        const miktar = parseFloat(miktarInput.value);
+        const isValid = selectedCari && selectedStok && miktar > 0;
+        submitBtn.disabled = !isValid;
+
+        // Eğer inputlar elle silindiyse seçileni temizle
+        if (cariInput.value === "") selectedCari = null;
+        if (stokInput.value === "") selectedStok = null;
+      }
+
+      miktarInput.addEventListener("input", validateForm);
+
+      // Gönderme İşlemi
+      submitBtn.onclick = () => {
+        const data = {
+          order_id: currentOrderId,
+          customer_code: selectedCari.kod,
+          customer_name: selectedCari.ad,
+          product_code: selectedStok.kod,
+          product_name: selectedStok.ad,
+          quantity: miktarInput.value,
+          timestamp: new Date().toISOString(),
+        };
+
+        btnSpinner.style.display = "inline-block";
+        submitBtn.disabled = true;
+
+        // Telegram'a veriyi gönder
+        tg.sendData(JSON.stringify(data));
+
+        // Not: sendData sonrası Telegram uygulamayı otomatik kapatır.
+      };
+
+      // Başlat
+      initData();
+    </script>
+  </body>
+</html>
