@@ -433,10 +433,6 @@
       <div class="summary-badge" id="order-id-display">
         Sipariş ID: Bekleniyor...
       </div>
-
-      <div class="summary-badge" id="order-id-display">
-        Sipariş ID: Bekleniyor...
-      </div>
     </div>
     </div>
 
@@ -476,13 +472,13 @@
       // URL'den veya başlangıç parametresinden veri alma
       async function initData() {
         try {
-          // preload.json dosyasını botun ürettiği yerden çekiyoruz
-          const response = await fetch("preload.json");
+          // Cache-buster (?t=...) ekleyerek her zaman en güncel dosyayı çekmesini sağlıyoruz
+          const response = await fetch("preload.json?t=" + new Date().getTime());
           if (response.ok) {
             preloadData = await response.json();
-            console.log("Veriler yüklendi:", preloadData);
+            console.log("Netsis verileri GitHub'dan yüklendi.");
           } else {
-            throw new Error("Dosya bulunamadı");
+            throw new Error("Dosya bulunamadı: " + response.status);
           }
         } catch (e) {
           console.warn(
@@ -541,10 +537,10 @@
           const filtered = data
             .filter(
               (item) =>
-                item.ad.toLowerCase().includes(val) ||
-                item.kod.toLowerCase().includes(val),
+                (item.ad || "").toLowerCase().includes(val) ||
+                (item.kod || "").toLowerCase().includes(val),
             )
-            .slice(0, 10);
+            .slice(0, 15);
 
           if (filtered.length > 0) {
             filtered.forEach((item) => {
