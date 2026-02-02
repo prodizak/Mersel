@@ -439,7 +439,7 @@
       <span>Siparişi Onayla</span>
     </button>
 
-    <div class="summary-badge" id="order-id-display">
+    <div class="summary-badge" id="order-id-display" style="display: none;">
       Sipariş ID: Bekleniyor...
     </div>
   </div>
@@ -515,6 +515,18 @@
       // Arama kutularını güncelle
       setupAutocomplete(cariInput, cariList, preloadData.cariler, "cari");
       setupAutocomplete(stokInput, stokList, preloadData.stoklar, "stok");
+
+      // Telegram ID ile eşleşen Cariyi default getir
+      if (tg.initDataUnsafe && tg.initDataUnsafe.user) {
+        const userId = String(tg.initDataUnsafe.user.id);
+        const autoCari = preloadData.cariler.find(c => String(c.uid) === userId);
+        if (autoCari) {
+          selectedCari = autoCari;
+          cariInput.value = autoCari.ad;
+          console.log("Cari otomatik seçildi:", autoCari.ad);
+        }
+      }
+
       generateOrderId();
     }
 
