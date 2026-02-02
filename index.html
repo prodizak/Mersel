@@ -371,7 +371,7 @@
 <body>
   <div class="header">
     <h1>Mersel Sipariş</h1>
-    <p>Hızlı ve Akıllı Sipariş Yönetimi <span class="version">v2.0.5</span></p>
+    <p>Hızlı ve Akıllı Sipariş Yönetimi <span class="version">v2.0.6</span></p>
   </div>
 
   <div class="card">
@@ -519,11 +519,17 @@
       // Telegram ID ile eşleşen Cariyi default getir
       if (tg.initDataUnsafe && tg.initDataUnsafe.user) {
         const userId = String(tg.initDataUnsafe.user.id);
+        console.log("Telegram User ID:", userId);
         const autoCari = preloadData.cariler.find(c => String(c.uid) === userId);
         if (autoCari) {
           selectedCari = autoCari;
           cariInput.value = autoCari.ad;
           console.log("Cari otomatik seçildi:", autoCari.ad);
+          validateForm(); // Onay butonunu güncelle
+        } else {
+          console.warn("Bu Telegram ID ile eşleşen cari bulunamadı:", userId);
+          // Gerekirse hata tespiti için alert açılabilir:
+          // tg.showAlert("Sistem ID'niz: " + userId + "\nEşleşen Cari Bulunamadı.");
         }
       }
 
@@ -726,7 +732,7 @@
           if (tg.MainButton.isVisible) {
             tg.MainButton.hideProgress();
             tg.MainButton.enable();
-            tg.showAlert("Veri gönderilemedi. Lütfen botu özelden (DM) başlattığınızdan ve Keyboard butonu kullandığınızdan emin olun.");
+            tg.showAlert("⚠️ Sipariş Kaydedilemedi!\n\nSebep:\n1. Bot ile ÖZEL (DM) mesajlaşma dışında olamazsınız.\n2. Web App'i sadece klavyedeki 'Hızlı Sipariş' butonundan açmalısınız.\n3. Telegram ayarlarınızda 'Botlara Veri Gönder' kapalı olabilir.");
           }
         }, 4000);
 
