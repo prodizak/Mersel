@@ -69,6 +69,12 @@
         font-weight: 600;
       }
 
+      .header .version {
+        font-size: 10px;
+        color: var(--tg-theme-hint-color);
+        opacity: 0.5;
+      }
+
       .header p {
         font-size: 14px;
         color: var(--tg-theme-hint-color);
@@ -358,7 +364,7 @@
   <body>
     <div class="header">
       <h1>Mersel Sipariş</h1>
-      <p>Hızlı ve Akıllı Sipariş Yönetimi</p>
+      <p>Hızlı ve Akıllı Sipariş Yönetimi <span class="version">v2.0.2</span></p>
     </div>
 
     <div class="card">
@@ -522,10 +528,24 @@
         orderIdDisplay.innerText = `Sipariş ID: ${currentOrderId}`;
       }
 
+      // Turkish Case-Insensitive Search Helper (Modern Approach)
+      function trLow(text) {
+        if (!text) return "";
+        try {
+          return text.toString().toLocaleLowerCase('tr-TR');
+        } catch (e) {
+          // Fallback if locale not supported
+          return text.toString()
+            .replace(/İ/g, "i")
+            .replace(/I/g, "ı")
+            .toLowerCase();
+        }
+      }
+
       // Autocomplete Mantığı
       function setupAutocomplete(input, list, data, type) {
         input.addEventListener("input", (e) => {
-          const val = e.target.value.toLowerCase();
+          const val = trLow(e.target.value);
           list.innerHTML = "";
 
           if (!val) {
@@ -537,8 +557,8 @@
           const filtered = data
             .filter(
               (item) =>
-                (item.ad || "").toLowerCase().includes(val) ||
-                (item.kod || "").toLowerCase().includes(val),
+                trLow(item.ad).includes(val) ||
+                trLow(item.kod).includes(val),
             )
             .slice(0, 15);
 
