@@ -371,7 +371,9 @@
 <body>
   <div class="header">
     <h1>Mersel Sipariş</h1>
-    <p>Hızlı ve Akıllı Sipariş Yönetimi <span class="version">v2.0.6</span></p>
+    <p>Hızlı ve Akıllı Sipariş Yönetimi <span class="version">v2.0.7</span></p>
+    <div id="debug-info" style="font-size: 9px; color: var(--tg-theme-hint-color); opacity: 0.7; margin-top: -8px;">ID:
+      Algılanıyor...</div>
   </div>
 
   <div class="card">
@@ -472,6 +474,7 @@
     const btnSpinner = document.getElementById("btn-spinner");
     const aciklamaInput = document.getElementById("aciklama-input");
     const charCount = document.getElementById("char-count");
+    const debugInfo = document.getElementById("debug-info");
 
     // Seçilen değerler
     let selectedCari = null;
@@ -519,18 +522,18 @@
       // Telegram ID ile eşleşen Cariyi default getir
       if (tg.initDataUnsafe && tg.initDataUnsafe.user) {
         const userId = String(tg.initDataUnsafe.user.id);
-        console.log("Telegram User ID:", userId);
-        const autoCari = preloadData.cariler.find(c => String(c.uid) === userId);
+        const autoCari = preloadData.cariler.find(c => c.uid && String(c.uid).trim() === userId.trim());
+
         if (autoCari) {
           selectedCari = autoCari;
           cariInput.value = autoCari.ad;
-          console.log("Cari otomatik seçildi:", autoCari.ad);
-          validateForm(); // Onay butonunu güncelle
+          debugInfo.innerText = `ID: ${userId} | Cari: ${autoCari.kod}`;
+          validateForm();
         } else {
-          console.warn("Bu Telegram ID ile eşleşen cari bulunamadı:", userId);
-          // Gerekirse hata tespiti için alert açılabilir:
-          // tg.showAlert("Sistem ID'niz: " + userId + "\nEşleşen Cari Bulunamadı.");
+          debugInfo.innerText = `ID: ${userId} | Cari: Bulunamadı`;
         }
+      } else {
+        debugInfo.innerText = "ID: Algılanamadı (Tarayıcı modunda çalışıyor)";
       }
 
       generateOrderId();
