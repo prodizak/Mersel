@@ -1,723 +1,736 @@
 <!doctype html>
 <html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <title>Mersel Sipariş Formu</title>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      :root {
-        --tg-theme-bg-color: #ffffff;
-        --tg-theme-text-color: #222222;
-        --tg-theme-hint-color: #999999;
-        --tg-theme-link-color: #248bed;
-        --tg-theme-button-color: #248bed;
-        --tg-theme-button-text-color: #ffffff;
-        --tg-theme-secondary-bg-color: #efeff3;
 
-        --primary-gradient: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-        --glass-bg: rgba(255, 255, 255, 0.1);
-        --glass-border: rgba(255, 255, 255, 0.2);
-        --card-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Mersel Sipariş Formu</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --tg-theme-bg-color: #ffffff;
+      --tg-theme-text-color: #222222;
+      --tg-theme-hint-color: #999999;
+      --tg-theme-link-color: #248bed;
+      --tg-theme-button-color: #248bed;
+      --tg-theme-button-text-color: #ffffff;
+      --tg-theme-secondary-bg-color: #efeff3;
 
-      /* Telegram Theme Adaptation */
-      body.dark {
-        --glass-bg: rgba(0, 0, 0, 0.2);
-        --glass-border: rgba(255, 255, 255, 0.1);
-      }
+      --primary-gradient: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      --glass-bg: rgba(255, 255, 255, 0.1);
+      --glass-border: rgba(255, 255, 255, 0.2);
+      --card-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    }
 
-      * {
-        box-sizing: border-box;
-        -webkit-tap-highlight-color: transparent;
-      }
+    /* Telegram Theme Adaptation */
+    body.dark {
+      --glass-bg: rgba(0, 0, 0, 0.2);
+      --glass-border: rgba(255, 255, 255, 0.1);
+    }
 
-      body {
-        font-family: "Outfit", sans-serif;
-        background-color: var(--tg-theme-secondary-bg-color);
-        color: var(--tg-theme-text-color);
-        margin: 0;
-        padding: 16px;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        overflow-x: hidden;
-      }
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
 
-      .header {
-        text-align: center;
-        margin-bottom: 24px;
-        animation: fadeInDown 0.8s ease-out;
-      }
+    body {
+      font-family: "Outfit", sans-serif;
+      background-color: var(--tg-theme-secondary-bg-color);
+      color: var(--tg-theme-text-color);
+      margin: 0;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
 
-      .header h1 {
-        font-size: 24px;
-        margin: 0;
-        background: var(--primary-gradient);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 600;
-      }
+    .header {
+      text-align: center;
+      margin-bottom: 24px;
+      animation: fadeInDown 0.8s ease-out;
+    }
 
-      .header .version {
-        font-size: 10px;
-        color: var(--tg-theme-hint-color);
-        opacity: 0.5;
-      }
+    .header h1 {
+      font-size: 24px;
+      margin: 0;
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 600;
+    }
 
-      .header p {
-        font-size: 14px;
-        color: var(--tg-theme-hint-color);
-        margin: 4px 0 0;
-      }
+    .header .version {
+      font-size: 10px;
+      color: var(--tg-theme-hint-color);
+      opacity: 0.5;
+    }
 
-      .card {
-        background: var(--tg-theme-bg-color);
-        border-radius: 20px;
-        padding: 24px;
-        box-shadow: var(--card-shadow);
-        border: 1px solid var(--glass-border);
-        backdrop-filter: blur(10px);
-        animation: fadeInUp 0.8s ease-out;
-      }
+    .header p {
+      font-size: 14px;
+      color: var(--tg-theme-hint-color);
+      margin: 4px 0 0;
+    }
 
-      .form-group {
-        margin-bottom: 20px;
-        position: relative;
-      }
+    .card {
+      background: var(--tg-theme-bg-color);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: var(--card-shadow);
+      border: 1px solid var(--glass-border);
+      backdrop-filter: blur(10px);
+      animation: fadeInUp 0.8s ease-out;
+    }
 
-      label {
-        display: block;
-        font-size: 14px;
-        font-weight: 600;
-        margin-bottom: 8px;
-        color: var(--tg-theme-hint-color);
-        padding-left: 4px;
-      }
+    .form-group {
+      margin-bottom: 20px;
+      position: relative;
+    }
 
-      .input-wrapper {
-        position: relative;
-        display: flex;
-        align-items: center;
-      }
+    label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--tg-theme-hint-color);
+      padding-left: 4px;
+    }
 
-      input {
-        width: 100%;
-        padding: 12px 16px;
-        border-radius: 12px;
-        border: 1.5px solid var(--tg-theme-secondary-bg-color);
-        background-color: var(--tg-theme-secondary-bg-color);
-        color: var(--tg-theme-text-color);
-        font-size: 16px;
-        font-family: inherit;
-        transition: all 0.3s ease;
-        outline: none;
-      }
+    .input-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
 
-      input:focus {
-        border-color: var(--tg-theme-button-color);
-        background-color: var(--tg-theme-bg-color);
-        box-shadow: 0 0 0 4px rgba(36, 139, 237, 0.1);
-      }
+    input {
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 12px;
+      border: 1.5px solid var(--tg-theme-secondary-bg-color);
+      background-color: var(--tg-theme-secondary-bg-color);
+      color: var(--tg-theme-text-color);
+      font-size: 16px;
+      font-family: inherit;
+      transition: all 0.3s ease;
+      outline: none;
+    }
 
-      /* Autocomplete Styles */
-      .autocomplete-list {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: var(--tg-theme-bg-color);
-        border-radius: 12px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-        max-height: 250px;
-        overflow-y: auto;
-        margin-top: 4px;
-        display: none;
-        border: 1px solid var(--tg-theme-secondary-bg-color);
-      }
+    input:focus {
+      border-color: var(--tg-theme-button-color);
+      background-color: var(--tg-theme-bg-color);
+      box-shadow: 0 0 0 4px rgba(36, 139, 237, 0.1);
+    }
 
-      .autocomplete-item {
-        padding: 12px 16px;
-        cursor: pointer;
-        transition: background 0.2s;
-        border-bottom: 1px solid var(--tg-theme-secondary-bg-color);
-        display: flex;
-        flex-direction: column;
-      }
+    /* Autocomplete Styles */
+    .autocomplete-list {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--tg-theme-bg-color);
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      max-height: 250px;
+      overflow-y: auto;
+      margin-top: 4px;
+      display: none;
+      border: 1px solid var(--tg-theme-secondary-bg-color);
+    }
 
-      .autocomplete-item:last-child {
-        border-bottom: none;
-      }
+    .autocomplete-item {
+      padding: 12px 16px;
+      cursor: pointer;
+      transition: background 0.2s;
+      border-bottom: 1px solid var(--tg-theme-secondary-bg-color);
+      display: flex;
+      flex-direction: column;
+    }
 
-      .autocomplete-item:hover,
-      .autocomplete-item.active {
-        background-color: var(--tg-theme-secondary-bg-color);
-      }
+    .autocomplete-item:last-child {
+      border-bottom: none;
+    }
 
-      .autocomplete-item .title {
-        font-size: 15px;
-        font-weight: 600;
-      }
+    .autocomplete-item:hover,
+    .autocomplete-item.active {
+      background-color: var(--tg-theme-secondary-bg-color);
+    }
 
-      .autocomplete-item .subtitle {
-        font-size: 12px;
-        color: var(--tg-theme-hint-color);
-      }
+    .autocomplete-item .title {
+      font-size: 15px;
+      font-weight: 600;
+    }
 
-      .send-btn {
-        width: 100%;
-        padding: 16px;
-        border-radius: 16px;
-        border: none;
-        background: var(--primary-gradient);
-        color: white;
-        font-size: 18px;
-        font-weight: 600;
-        cursor: pointer;
-        transition:
-          transform 0.2s,
-          box-shadow 0.2s;
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-      }
+    .autocomplete-item .subtitle {
+      font-size: 12px;
+      color: var(--tg-theme-hint-color);
+    }
 
-      .send-btn:active {
-        transform: scale(0.98);
-      }
+    .send-btn {
+      width: 100%;
+      padding: 16px;
+      border-radius: 16px;
+      border: none;
+      background: var(--primary-gradient);
+      color: white;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
 
-      .send-btn:disabled {
-        opacity: 0.6;
-        cursor: not-allowed;
-      }
+    .send-btn:active {
+      transform: scale(0.98);
+    }
 
-      .summary-badge {
-        display: inline-block;
-        padding: 4px 12px;
-        background: var(--tg-theme-secondary-bg-color);
-        border-radius: 20px;
-        font-size: 12px;
-        color: var(--tg-theme-hint-color);
-        margin-top: 10px;
-        width: 100%;
-        text-align: center;
-      }
+    .send-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
 
-      /* Sepet Bölümü */
-      .basket-container {
-        margin-top: 24px;
-        border-top: 1.5px dashed var(--tg-theme-secondary-bg-color);
-        padding-top: 24px;
-        animation: fadeInUp 0.8s ease-out;
-      }
+    .summary-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: var(--tg-theme-secondary-bg-color);
+      border-radius: 20px;
+      font-size: 12px;
+      color: var(--tg-theme-hint-color);
+      margin-top: 10px;
+      width: 100%;
+      text-align: center;
+    }
 
-      .basket-title {
-        font-size: 16px;
-        font-weight: 600;
-        margin-bottom: 12px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
+    /* Sepet Bölümü */
+    .basket-container {
+      margin-top: 24px;
+      border-top: 1.5px dashed var(--tg-theme-secondary-bg-color);
+      padding-top: 24px;
+      animation: fadeInUp 0.8s ease-out;
+    }
 
-      .basket-item {
-        background: var(--tg-theme-secondary-bg-color);
-        border-radius: 12px;
-        padding: 12px 16px;
-        margin-bottom: 8px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        animation: slideInRight 0.3s ease-out;
-      }
+    .basket-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-      .basket-item .info {
-        display: flex;
-        flex-direction: column;
-      }
+    .basket-item {
+      background: var(--tg-theme-secondary-bg-color);
+      border-radius: 12px;
+      padding: 12px 16px;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: slideInRight 0.3s ease-out;
+    }
 
-      .basket-item .name {
-        font-size: 14px;
-        font-weight: 600;
-      }
+    .basket-item .info {
+      display: flex;
+      flex-direction: column;
+    }
 
-      .basket-item .qty {
-        font-size: 12px;
-        color: var(--tg-theme-hint-color);
-      }
+    .basket-item .name {
+      font-size: 14px;
+      font-weight: 600;
+    }
 
-      .remove-btn {
-        background: #ff4d4f;
-        color: white;
-        border: none;
-        width: 24px;
-        height: 24px;
-        border-radius: 6px;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 16px;
-      }
+    .basket-item .qty {
+      font-size: 12px;
+      color: var(--tg-theme-hint-color);
+    }
 
-      .add-to-basket-btn {
-        width: 100%;
-        padding: 12px;
-        border-radius: 12px;
-        border: 2px solid var(--tg-theme-button-color);
-        background: transparent;
-        color: var(--tg-theme-button-color);
-        font-size: 15px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.2s;
-        margin-bottom: 16px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-      }
+    .remove-btn {
+      background: #ff4d4f;
+      color: white;
+      border: none;
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+    }
 
-      .add-to-basket-btn:active {
-        background: var(--tg-theme-button-color);
-        color: white;
-      }
+    .add-to-basket-btn {
+      width: 100%;
+      padding: 12px;
+      border-radius: 12px;
+      border: 2px solid var(--tg-theme-button-color);
+      background: transparent;
+      color: var(--tg-theme-button-color);
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
 
-      .add-to-basket-btn:disabled {
-        opacity: 0.5;
-        cursor: not-allowed;
-        border-color: var(--tg-theme-hint-color);
-        color: var(--tg-theme-hint-color);
-      }
+    .add-to-basket-btn:active {
+      background: var(--tg-theme-button-color);
+      color: white;
+    }
 
-      @keyframes slideInRight {
-        from { opacity: 0; transform: translateX(20px); }
-        to { opacity: 1; transform: translateX(0); }
+    .add-to-basket-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      border-color: var(--tg-theme-hint-color);
+      color: var(--tg-theme-hint-color);
+    }
+
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(20px);
       }
 
-      /* Animations */
-      @keyframes fadeInDown {
-        from {
-          opacity: 0;
-          transform: translateY(-20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
       }
 
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
       }
 
-      /* Custom Scrollbar */
-      ::-webkit-scrollbar {
-        width: 6px;
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
-      ::-webkit-scrollbar-track {
-        background: transparent;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: var(--tg-theme-hint-color);
-        border-radius: 10px;
-      }
+    }
 
-      /* Loading Spinner */
-      .spinner {
-        width: 20px;
-        height: 20px;
-        border: 3px solid rgba(255, 255, 255, 0.3);
-        border-radius: 50%;
-        border-top-color: #fff;
-        animation: spin 1s ease-in-out infinite;
-        display: none;
-      }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
 
-      @keyframes spin {
-        to {
-          transform: rotate(360deg);
-        }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--tg-theme-hint-color);
+      border-radius: 10px;
+    }
+
+    /* Loading Spinner */
+    .spinner {
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top-color: #fff;
+      animation: spin 1s ease-in-out infinite;
+      display: none;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
       }
-    </style>
-  </head>
-  <body>
-    <div class="header">
-      <h1>Mersel Sipariş</h1>
-      <p>Hızlı ve Akıllı Sipariş Yönetimi <span class="version">v2.0.4</span></p>
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Mersel Sipariş</h1>
+    <p>Hızlı ve Akıllı Sipariş Yönetimi <span class="version">v2.0.5</span></p>
+  </div>
+
+  <div class="card">
+    <!-- Cari Arama -->
+    <div class="form-group">
+      <label for="cari-input">Cari (Müşteri) Seçin</label>
+      <div class="input-wrapper">
+        <input type="text" id="cari-input" placeholder="Cari adı veya kodu yazın..." autocomplete="off" />
+        <div id="cari-list" class="autocomplete-list"></div>
+      </div>
     </div>
 
-    <div class="card">
-      <!-- Cari Arama -->
+    <!-- Tarih Seçimi -->
+    <div class="form-group">
+      <label for="tarih-input">Sipariş Tarihi</label>
+      <input type="date" id="tarih-input" />
+    </div>
+
+    <!-- Açıklama -->
+    <div class="form-group">
+      <label for="aciklama-input">Sipariş Açıklaması (Maks. 500 Karakter)</label>
+      <textarea id="aciklama-input" placeholder="Sipariş notunuzu buraya yazabilirsiniz..." maxlength="500"
+        style="width: 100%; padding: 12px 16px; border-radius: 12px; border: 1.5px solid var(--tg-theme-secondary-bg-color); background-color: var(--tg-theme-secondary-bg-color); color: var(--tg-theme-text-color); font-size: 16px; font-family: inherit; transition: all 0.3s ease; outline: none; resize: none; min-height: 80px;"></textarea>
+      <div id="char-count"
+        style="font-size: 10px; color: var(--tg-theme-hint-color); text-align: right; margin-top: 4px;">0 / 500</div>
+    </div>
+
+    <div style="border-top: 1px solid var(--tg-theme-secondary-bg-color); margin: 20px 0; padding-top: 20px;">
+      <p
+        style="font-size: 12px; color: var(--tg-theme-hint-color); font-weight: 600; margin-bottom: 12px; text-transform: uppercase;">
+        Ürün Ekleme</p>
+
+      <!-- Stok Arama -->
       <div class="form-group">
-        <label for="cari-input">Cari (Müşteri) Seçin</label>
+        <label for="stok-input">Stok (Ürün) Seçin</label>
         <div class="input-wrapper">
-          <input
-            type="text"
-            id="cari-input"
-            placeholder="Cari adı veya kodu yazın..."
-            autocomplete="off"
-          />
-          <div id="cari-list" class="autocomplete-list"></div>
+          <input type="text" id="stok-input" placeholder="Ürün adı veya kodu yazın..." autocomplete="off" />
+          <div id="stok-list" class="autocomplete-list"></div>
         </div>
       </div>
 
-      <!-- Tarih Seçimi -->
+      <!-- Miktar -->
       <div class="form-group">
-        <label for="tarih-input">Sipariş Tarihi</label>
-        <input type="date" id="tarih-input" />
+        <label for="miktar-input">Miktar</label>
+        <input type="number" id="miktar-input" placeholder="0" min="1" step="any" />
       </div>
 
-      <div style="border-top: 1px solid var(--tg-theme-secondary-bg-color); margin: 20px 0; padding-top: 20px;">
-        <p style="font-size: 12px; color: var(--tg-theme-hint-color); font-weight: 600; margin-bottom: 12px; text-transform: uppercase;">Ürün Ekleme</p>
-        
-        <!-- Stok Arama -->
-        <div class="form-group">
-          <label for="stok-input">Stok (Ürün) Seçin</label>
-          <div class="input-wrapper">
-            <input
-              type="text"
-              id="stok-input"
-              placeholder="Ürün adı veya kodu yazın..."
-              autocomplete="off"
-            />
-            <div id="stok-list" class="autocomplete-list"></div>
-          </div>
-        </div>
-
-        <!-- Miktar -->
-        <div class="form-group">
-          <label for="miktar-input">Miktar</label>
-          <input
-            type="number"
-            id="miktar-input"
-            placeholder="0"
-            min="1"
-            step="any"
-          />
-        </div>
-
-        <button id="add-basket-btn" class="add-to-basket-btn" disabled>
-          <span>+ Sepete Ekle</span>
-        </button>
-      </div>
-
-      <!-- Sepet Listesi -->
-      <div id="basket-section" class="basket-container" style="display: none;">
-        <div class="basket-title">
-          <span>Sipariş Sepeti</span>
-          <span id="basket-count" style="font-size: 12px; background: var(--tg-theme-button-color); color: white; padding: 2px 8px; border-radius: 10px;">0</span>
-        </div>
-        <div id="basket-list"></div>
-      </div>
-
-      <!-- Alttaki buton artık Telegram'ın kendi butonuyla (MainButton) yönetildiği için gizlendi -->
-      <button id="submit-btn" class="send-btn" style="display: none;">
-        <span>Siparişi Onayla</span>
+      <button id="add-basket-btn" class="add-to-basket-btn" disabled>
+        <span>+ Sepete Ekle</span>
       </button>
-
-      <div class="summary-badge" id="order-id-display">
-        Sipariş ID: Bekleniyor...
-      </div>
     </div>
 
-    <script>
-      const tg = window.Telegram.WebApp;
-      tg.expand();
-      tg.ready();
+    <!-- Sepet Listesi -->
+    <div id="basket-section" class="basket-container" style="display: none;">
+      <div class="basket-title">
+        <span>Sipariş Sepeti</span>
+        <span id="basket-count"
+          style="font-size: 12px; background: var(--tg-theme-button-color); color: white; padding: 2px 8px; border-radius: 10px;">0</span>
+      </div>
+      <div id="basket-list"></div>
+    </div>
 
-      // Veri Yapısı (Preload - Bot tarafından doldurulacak)
-      // Örnek veri: { cariler: [{kod: 'C01', ad: 'Müşteri A'}], stoklar: [{kod: 'S01', ad: 'Ürün X', fiyat: 100}] }
-      let preloadData = {
-        cariler: [],
-        stoklar: [],
-      };
+    <!-- Alttaki buton artık Telegram'ın kendi butonuyla (MainButton) yönetildiği için gizlendi -->
+    <button id="submit-btn" class="send-btn" style="display: none;">
+      <span>Siparişi Onayla</span>
+    </button>
 
-      // UI Elementleri
-      const cariInput = document.getElementById("cari-input");
-      const cariList = document.getElementById("cari-list");
-      const tarihInput = document.getElementById("tarih-input");
-      const stokInput = document.getElementById("stok-input");
-      const stokList = document.getElementById("stok-list");
-      const miktarInput = document.getElementById("miktar-input");
-      const addBasketBtn = document.getElementById("add-basket-btn");
-      const basketSection = document.getElementById("basket-section");
-      const basketList = document.getElementById("basket-list");
-      const basketCount = document.getElementById("basket-count");
-      const submitBtn = document.getElementById("submit-btn");
-      const orderIdDisplay = document.getElementById("order-id-display");
-      const btnSpinner = document.getElementById("btn-spinner");
+    <div class="summary-badge" id="order-id-display">
+      Sipariş ID: Bekleniyor...
+    </div>
+  </div>
 
-      // Seçilen değerler
-      let selectedCari = null;
-      let selectedStok = null;
-      let basket = [];
-      let currentOrderId = "";
+  <script>
+    const tg = window.Telegram.WebApp;
+    tg.expand();
+    tg.ready();
 
-      // URL'den veya başlangıç parametresinden veri alma
-      async function initData() {
-        try {
-          // Cache-buster (?t=...) ekleyerek her zaman en güncel dosyayı çekmesini sağlıyoruz
-          const response = await fetch("preload.json?t=" + new Date().getTime());
-          if (response.ok) {
-            preloadData = await response.json();
-            console.log("Netsis verileri GitHub'dan yüklendi.");
-          } else {
-            throw new Error("Dosya bulunamadı: " + response.status);
-          }
-        } catch (e) {
-          console.warn(
-            "Preload dosyası yüklenemedi, test verileri kullanılıyor:",
-            e,
-          );
-          // Geliştirme/Test için fallback
-          preloadData = {
-            cariler: [
-              { kod: "120.01.001", ad: "MERSEL TEKSTIL (TEST)" },
-              { kod: "120.01.002", ad: "MÜŞTERİ B (TEST)" },
-            ],
-            stoklar: [
-              { kod: "STK001", ad: "TEST ÜRÜN A", fiyat: 10 },
-              { kod: "STK002", ad: "TEST ÜRÜN B (TEST)", fiyat: 20 },
-            ],
-          };
+    // Veri Yapısı (Preload - Bot tarafından doldurulacak)
+    // Örnek veri: { cariler: [{kod: 'C01', ad: 'Müşteri A'}], stoklar: [{kod: 'S01', ad: 'Ürün X', fiyat: 100}] }
+    let preloadData = {
+      cariler: [],
+      stoklar: [],
+    };
+
+    // UI Elementleri
+    const cariInput = document.getElementById("cari-input");
+    const cariList = document.getElementById("cari-list");
+    const tarihInput = document.getElementById("tarih-input");
+    const stokInput = document.getElementById("stok-input");
+    const stokList = document.getElementById("stok-list");
+    const miktarInput = document.getElementById("miktar-input");
+    const addBasketBtn = document.getElementById("add-basket-btn");
+    const basketSection = document.getElementById("basket-section");
+    const basketList = document.getElementById("basket-list");
+    const basketCount = document.getElementById("basket-count");
+    const submitBtn = document.getElementById("submit-btn");
+    const orderIdDisplay = document.getElementById("order-id-display");
+    const btnSpinner = document.getElementById("btn-spinner");
+    const aciklamaInput = document.getElementById("aciklama-input");
+    const charCount = document.getElementById("char-count");
+
+    // Seçilen değerler
+    let selectedCari = null;
+    let selectedStok = null;
+    let basket = [];
+    let currentOrderId = "";
+
+    // URL'den veya başlangıç parametresinden veri alma
+    async function initData() {
+      try {
+        // Cache-buster (?t=...) ekleyerek her zaman en güncel dosyayı çekmesini sağlıyoruz
+        const response = await fetch("preload.json?t=" + new Date().getTime());
+        if (response.ok) {
+          preloadData = await response.json();
+          console.log("Netsis verileri GitHub'dan yüklendi.");
+        } else {
+          throw new Error("Dosya bulunamadı: " + response.status);
+        }
+      } catch (e) {
+        console.warn(
+          "Preload dosyası yüklenemedi, test verileri kullanılıyor:",
+          e,
+        );
+        // Geliştirme/Test için fallback
+        preloadData = {
+          cariler: [
+            { kod: "120.01.001", ad: "MERSEL TEKSTIL (TEST)" },
+            { kod: "120.01.002", ad: "MÜŞTERİ B (TEST)" },
+          ],
+          stoklar: [
+            { kod: "STK001", ad: "TEST ÜRÜN A", fiyat: 10 },
+            { kod: "STK002", ad: "TEST ÜRÜN B (TEST)", fiyat: 20 },
+          ],
+        };
+      }
+
+      // Bugünün tarihini varsayılan yap
+      const today = new Date().toISOString().split("T")[0];
+      tarihInput.value = today;
+
+      // Arama kutularını güncelle
+      setupAutocomplete(cariInput, cariList, preloadData.cariler, "cari");
+      setupAutocomplete(stokInput, stokList, preloadData.stoklar, "stok");
+      generateOrderId();
+    }
+
+    // Sipariş ID Oluşturma: Q + YYYYMMDDHHmm + Random2Hane = 1 + 4 + 2 + 2 + 2 + 2 + 2 = 15 Karakter
+    function generateOrderId() {
+      const now = new Date();
+      const yyyy = String(now.getFullYear());
+      const mm = String(now.getMonth() + 1).padStart(2, "0");
+      const dd = String(now.getDate()).padStart(2, "0");
+      const hh = String(now.getHours()).padStart(2, "0");
+      const min = String(now.getMinutes()).padStart(2, "0");
+      const rand = String(Math.floor(Math.random() * 90) + 10);
+
+      currentOrderId = `Q${yyyy}${mm}${dd}${hh}${min}${rand}`;
+      orderIdDisplay.innerText = `Sipariş ID: ${currentOrderId}`;
+    }
+
+    // Turkish Case-Insensitive Search Helper (Modern Approach)
+    function trLow(text) {
+      if (!text) return "";
+      try {
+        return text.toString().toLocaleLowerCase('tr-TR');
+      } catch (e) {
+        // Fallback if locale not supported
+        return text.toString()
+          .replace(/İ/g, "i")
+          .replace(/I/g, "ı")
+          .toLowerCase();
+      }
+    }
+
+    // Autocomplete Mantığı
+    function setupAutocomplete(input, list, data, type) {
+      input.addEventListener("input", (e) => {
+        const val = trLow(e.target.value);
+        list.innerHTML = "";
+
+        if (!val) {
+          list.style.display = "none";
+          validateForm();
+          return;
         }
 
-        // Bugünün tarihini varsayılan yap
-        const today = new Date().toISOString().split("T")[0];
-        tarihInput.value = today;
+        const filtered = data
+          .filter(
+            (item) =>
+              trLow(item.ad).includes(val) ||
+              trLow(item.kod).includes(val),
+          )
+          .slice(0, 15);
 
-        // Arama kutularını güncelle
-        setupAutocomplete(cariInput, cariList, preloadData.cariler, "cari");
-        setupAutocomplete(stokInput, stokList, preloadData.stoklar, "stok");
-        generateOrderId();
-      }
-
-      // Sipariş ID Oluşturma: Q + YYYYMMDDHHmm + Random2Hane = 1 + 4 + 2 + 2 + 2 + 2 + 2 = 15 Karakter
-      function generateOrderId() {
-        const now = new Date();
-        const yyyy = String(now.getFullYear());
-        const mm = String(now.getMonth() + 1).padStart(2, "0");
-        const dd = String(now.getDate()).padStart(2, "0");
-        const hh = String(now.getHours()).padStart(2, "0");
-        const min = String(now.getMinutes()).padStart(2, "0");
-        const rand = String(Math.floor(Math.random() * 90) + 10);
-
-        currentOrderId = `Q${yyyy}${mm}${dd}${hh}${min}${rand}`;
-        orderIdDisplay.innerText = `Sipariş ID: ${currentOrderId}`;
-      }
-
-      // Turkish Case-Insensitive Search Helper (Modern Approach)
-      function trLow(text) {
-        if (!text) return "";
-        try {
-          return text.toString().toLocaleLowerCase('tr-TR');
-        } catch (e) {
-          // Fallback if locale not supported
-          return text.toString()
-            .replace(/İ/g, "i")
-            .replace(/I/g, "ı")
-            .toLowerCase();
-        }
-      }
-
-      // Autocomplete Mantığı
-      function setupAutocomplete(input, list, data, type) {
-        input.addEventListener("input", (e) => {
-          const val = trLow(e.target.value);
-          list.innerHTML = "";
-
-          if (!val) {
-            list.style.display = "none";
-            validateForm();
-            return;
-          }
-
-          const filtered = data
-            .filter(
-              (item) =>
-                trLow(item.ad).includes(val) ||
-                trLow(item.kod).includes(val),
-            )
-            .slice(0, 15);
-
-          if (filtered.length > 0) {
-            filtered.forEach((item) => {
-              const div = document.createElement("div");
-              div.className = "autocomplete-item";
-              div.innerHTML = `
+        if (filtered.length > 0) {
+          filtered.forEach((item) => {
+            const div = document.createElement("div");
+            div.className = "autocomplete-item";
+            div.innerHTML = `
                             <span class="title">${item.ad}</span>
                             <span class="subtitle">${item.kod}</span>
                         `;
-              div.onclick = () => {
-                input.value = item.ad;
-                if (type === "cari") selectedCari = item;
-                if (type === "stok") selectedStok = item;
-                list.style.display = "none";
-                validateForm();
-              };
-              list.appendChild(div);
-            });
-            list.style.display = "block";
-          } else {
-            list.style.display = "none";
-          }
-        });
-
-        // Tıklama dışı kapatma
-        document.addEventListener("click", (e) => {
-          if (e.target !== input) list.style.display = "none";
-        });
-      }
-
-      function validateForm() {
-        const miktar = parseFloat(miktarInput.value);
-        const isAddValid = selectedStok && miktar > 0;
-        addBasketBtn.disabled = !isAddValid;
-
-        const isSubmitValid = selectedCari && basket.length > 0 && tarihInput.value;
-        
-        // Native Telegram Main Button kullanımı
-        if (isSubmitValid) {
-          tg.MainButton.text = "SİPARİŞİ ONAYLA (" + basket.length + " Ürün)";
-          tg.MainButton.show();
+            div.onclick = () => {
+              input.value = item.ad;
+              if (type === "cari") selectedCari = item;
+              if (type === "stok") selectedStok = item;
+              list.style.display = "none";
+              validateForm();
+            };
+            list.appendChild(div);
+          });
+          list.style.display = "block";
         } else {
-          tg.MainButton.hide();
+          list.style.display = "none";
         }
+      });
 
-        // Eğer inputlar elle silindiyse seçileni temizle
-        if (cariInput.value === "") selectedCari = null;
-        if (stokInput.value === "") selectedStok = null;
+      // Tıklama dışı kapatma
+      document.addEventListener("click", (e) => {
+        if (e.target !== input) list.style.display = "none";
+      });
+    }
+
+    function validateForm() {
+      const miktar = parseFloat(miktarInput.value);
+      const isAddValid = selectedStok && miktar > 0;
+      addBasketBtn.disabled = !isAddValid;
+
+      const isSubmitValid = selectedCari && basket.length > 0 && tarihInput.value;
+
+      // Native Telegram Main Button kullanımı
+      if (isSubmitValid) {
+        tg.MainButton.text = "SİPARİŞİ ONAYLA (" + basket.length + " Ürün)";
+        tg.MainButton.show();
+      } else {
+        tg.MainButton.hide();
       }
 
-      miktarInput.addEventListener("input", validateForm);
-      tarihInput.addEventListener("change", validateForm);
-      cariInput.addEventListener("input", validateForm);
+      // Eğer inputlar elle silindiyse seçileni temizle
+      if (cariInput.value === "") selectedCari = null;
+      if (stokInput.value === "") selectedStok = null;
+    }
 
-      // Sepete Ekleme
-      addBasketBtn.onclick = () => {
-        const miktar = parseFloat(miktarInput.value);
-        const item = {
-          stok_kodu: selectedStok.kod,
-          stok_adi: selectedStok.ad,
-          miktar: miktar,
-          unique_key: Date.now()
-        };
+    miktarInput.addEventListener("input", validateForm);
+    tarihInput.addEventListener("change", validateForm);
+    cariInput.addEventListener("input", validateForm);
 
-        basket.push(item);
-        renderBasket();
+    // Karakter Sayacı
+    aciklamaInput.addEventListener("input", () => {
+      const len = aciklamaInput.value.length;
+      charCount.innerText = `${len} / 500`;
+    });
 
-        // Ürün kısmını temizle
-        stokInput.value = "";
-        miktarInput.value = "";
-        selectedStok = null;
-        validateForm();
-
-        // Feedback
-        tg.HapticFeedback.notificationOccurred("success");
+    // Sepete Ekleme
+    addBasketBtn.onclick = () => {
+      const miktar = parseFloat(miktarInput.value);
+      const item = {
+        stok_kodu: selectedStok.kod,
+        stok_adi: selectedStok.ad,
+        miktar: miktar,
+        unique_key: Date.now()
       };
 
-      function renderBasket() {
-        basketList.innerHTML = "";
-        if (basket.length === 0) {
-          basketSection.style.display = "none";
-        } else {
-          basketSection.style.display = "block";
-          basketCount.innerText = basket.length;
+      basket.push(item);
+      renderBasket();
 
-          basket.forEach((item, index) => {
-            const div = document.createElement("div");
-            div.className = "basket-item";
-            div.innerHTML = `
+      // Ürün kısmını temizle
+      stokInput.value = "";
+      miktarInput.value = "";
+      selectedStok = null;
+      validateForm();
+
+      // Feedback
+      tg.HapticFeedback.notificationOccurred("success");
+    };
+
+    function renderBasket() {
+      basketList.innerHTML = "";
+      if (basket.length === 0) {
+        basketSection.style.display = "none";
+      } else {
+        basketSection.style.display = "block";
+        basketCount.innerText = basket.length;
+
+        basket.forEach((item, index) => {
+          const div = document.createElement("div");
+          div.className = "basket-item";
+          div.innerHTML = `
               <div class="info">
                 <span class="name">${item.stok_adi}</span>
                 <span class="qty">${item.miktar} Adet (${item.stok_kodu})</span>
               </div>
               <button class="remove-btn" onclick="removeFromBasket(${item.unique_key})">&times;</button>
             `;
-            basketList.appendChild(div);
-          });
-        }
-        validateForm();
+          basketList.appendChild(div);
+        });
       }
+      validateForm();
+    }
 
-      window.removeFromBasket = (key) => {
-        basket = basket.filter(i => i.unique_key !== key);
-        renderBasket();
-        tg.HapticFeedback.impactOccurred("medium");
-      };
+    window.removeFromBasket = (key) => {
+      basket = basket.filter(i => i.unique_key !== key);
+      renderBasket();
+      tg.HapticFeedback.impactOccurred("medium");
+    };
 
-      // Gönderme İşlemi
-      const sendSiparis = () => {
-        try {
-          if (!selectedCari) throw new Error("Cari seçilmedi.");
-          if (basket.length === 0) throw new Error("Sepet boş.");
-          
-          const data = {
-            order_id: currentOrderId,
-            customer_code: selectedCari.kod,
-            customer_name: selectedCari.ad,
-            order_date: tarihInput.value,
-            basket: basket.map(i => ({
-              product_code: i.stok_kodu,
-              product_name: i.stok_adi,
-              quantity: i.miktar
-            })),
-            timestamp: new Date().toISOString(),
-          };
+    // Gönderme İşlemi
+    const sendSiparis = () => {
+      try {
+        if (!selectedCari) throw new Error("Cari seçilmedi.");
+        if (basket.length === 0) throw new Error("Sepet boş.");
 
-          tg.MainButton.showProgress();
-          tg.MainButton.disable();
+        const data = {
+          order_id: currentOrderId,
+          customer_code: selectedCari.kod,
+          customer_name: selectedCari.ad,
+          order_date: tarihInput.value,
+          description: aciklamaInput.value,
+          basket: basket.map(i => ({
+            product_code: i.stok_kodu,
+            product_name: i.stok_adi,
+            quantity: i.miktar
+          })),
+          timestamp: new Date().toISOString(),
+        };
 
-          // Diagnostic: Context check
-          if (tg.initDataUnsafe.receiver && tg.initDataUnsafe.chat_type !== 'sender') {
-             // alert("Uyarı: Bu işlem sadece Bot ile ÖZEL mesajlaşmada çalışır.");
-          }
+        tg.MainButton.showProgress();
+        tg.MainButton.disable();
 
-          console.log("Sending data to bot...", data);
-          tg.sendData(JSON.stringify(data));
-          
-          // Eğer 3 saniye içinde kapanmazsa bir hata olmuş olabilir
-          setTimeout(() => {
-            if (tg.MainButton.isVisible) {
-              tg.MainButton.hideProgress();
-              tg.MainButton.enable();
-              tg.showAlert("Veri gönderilemedi. Lütfen botu özelden (DM) başlattığınızdan ve Keyboard butonu kullandığınızdan emin olun.");
-            }
-          }, 4000);
-          
-        } catch (e) {
-          tg.showAlert("Hata: " + e.message);
-          tg.MainButton.hideProgress();
-          tg.MainButton.enable();
+        // Diagnostic: Context check
+        if (tg.initDataUnsafe.receiver && tg.initDataUnsafe.chat_type !== 'sender') {
+          // alert("Uyarı: Bu işlem sadece Bot ile ÖZEL mesajlaşmada çalışır.");
         }
-      };
 
-      tg.onEvent('mainButtonClicked', sendSiparis);
-      submitBtn.onclick = sendSiparis;
+        console.log("Sending data to bot...", data);
+        tg.sendData(JSON.stringify(data));
 
-      // Başlat
-      initData();
-    </script>
-  </body>
+        // Eğer 3 saniye içinde kapanmazsa bir hata olmuş olabilir
+        setTimeout(() => {
+          if (tg.MainButton.isVisible) {
+            tg.MainButton.hideProgress();
+            tg.MainButton.enable();
+            tg.showAlert("Veri gönderilemedi. Lütfen botu özelden (DM) başlattığınızdan ve Keyboard butonu kullandığınızdan emin olun.");
+          }
+        }, 4000);
+
+      } catch (e) {
+        tg.showAlert("Hata: " + e.message);
+        tg.MainButton.hideProgress();
+        tg.MainButton.enable();
+      }
+    };
+
+    tg.onEvent('mainButtonClicked', sendSiparis);
+    submitBtn.onclick = sendSiparis;
+
+    // Başlat
+    initData();
+  </script>
+</body>
+
 </html>
