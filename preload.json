@@ -1,4 +1,2942 @@
 {
-  "cariler": [],
-  "stoklar": []
+  "cariler": [
+    {
+      "kod": "M0094",
+      "ad": "-------------ADA OTOMOTİV SANAYİ VE TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0362",
+      "ad": "-------KAVRAM İTH. İHR. YÖNETİM DANIŞMANLIĞI VE DIŞ TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0251",
+      "ad": "------ARMADA MİMARLIK DEKORASYON İNŞAAT SAN.TİC.LTD.ŞTİ"
+    },
+    {
+      "kod": "M0062",
+      "ad": "------KEMER GOLF TURİZM İŞLETMECİLİĞİ YAPI SAN. TİC. A.Ş"
+    },
+    {
+      "kod": "M0201",
+      "ad": "------ÖMÜR ÇELİK SANAYİ VE TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0234",
+      "ad": "------ÖZEL KAVRAM EĞİTİM YAYINLARI BASIM YAYIN PAZARLAMA LTD. ŞTİ."
+    },
+    {
+      "kod": "S0026",
+      "ad": "-----AKBULUT MATBAACILIK - EMİNE AKBULUT"
+    },
+    {
+      "kod": "M0069",
+      "ad": "-----ÖZKURT OTOMOTİV SAN.VE TİC.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0261",
+      "ad": "-----TAMER GÖREN"
+    },
+    {
+      "kod": "M0296",
+      "ad": "-----ÜÇAY MÜHENDİSLİK KLİMA DOĞALGAZ MAKİNE İNŞAAT SANAYİ VE TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0235",
+      "ad": "----CNZ LOJISTIK ANTREPO VE DIŞ.TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0534",
+      "ad": "----DCT TRADING DIŞ TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0177",
+      "ad": "----FENİKS ULUSLARARASI TİCARET VE DANIŞ. LTD. STİ."
+    },
+    {
+      "kod": "M0389",
+      "ad": "----KAR MAKİNA PARÇALARI SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0068",
+      "ad": "----NETSENSE BİLİŞİM TEKNOLOJİLERİ SAN. VE TİC. A.Ş."
+    },
+    {
+      "kod": "M0409",
+      "ad": "----PLATİN KİMYA MÜM. VE DIŞ TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0208",
+      "ad": "----TÜRKİYE TURİNG OTOMOBİL KURUMU TURİSTİK TEKNİK TRİPTİK VE YAYIN İŞLETMELERİ."
+    },
+    {
+      "kod": "M0445",
+      "ad": "---AERİS TEKNOLOJİ ÇÖZÜMLERİ LTD. ŞTİ."
+    },
+    {
+      "kod": "M0279",
+      "ad": "---ALİBABA GIDA PAZARLAMA - EKREM KÜÇÜKARABACI"
+    },
+    {
+      "kod": "M0272",
+      "ad": "---BAYKUŞOĞLU YEDEK PARÇA TİCARET VE SANAYİ LTD. ŞTİ."
+    },
+    {
+      "kod": "M0402",
+      "ad": "---KOMBİ KLİMA GRUP İKLİMLENDİRME SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0555",
+      "ad": "---ÖZKÖK TEKSTİL İPLİK SAN.VE TİC.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0174",
+      "ad": "---TREO BİLGİ TEKNOLOJİLERİ LTD.ŞTİ."
+    },
+    {
+      "kod": "M0109",
+      "ad": "2M TEKSTİL LTD.ŞTİ."
+    },
+    {
+      "kod": "M0475",
+      "ad": "3GEN ENERJİ VE MÜHENDİSLİK SİST. A.Ş."
+    },
+    {
+      "kod": "M0524",
+      "ad": "A.K. MÜZİK YAPIM AYŞE NUR KÜÇÜKÖNCÜ"
+    },
+    {
+      "kod": "M0447",
+      "ad": "ABAKÜS BİLİŞİM TİCARET VE SAN. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0086",
+      "ad": "ABAKÜS BİLİŞİM TİCARET VE SAN. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0054",
+      "ad": "ABC MEDYA AJANSI A.Ş"
+    },
+    {
+      "kod": "M0263",
+      "ad": "ABC MEDYA HİZMETLERİ PAZARLAMA VE SATIŞ A.Ş."
+    },
+    {
+      "kod": "M0303",
+      "ad": "AC İSTANBUL ULUSLARARASI BAĞIMSIZ DENETİM A.Ş."
+    },
+    {
+      "kod": "M0545",
+      "ad": "ACANDİS SAĞLIK HİZMETLERİ ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "S0152",
+      "ad": "ACAR ÇEVRE SAĞLIK GÜVENLİK ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "S0047",
+      "ad": "ACAR MATBAACILIK PROMOSYON TANITIM HİZMETLERİ - AHMET ACAR"
+    },
+    {
+      "kod": "S0094",
+      "ad": "ACARLAR DAYANIKLI TÜKETİM MADDELERİ AĞAÇ VE DOKUMA ÜRN.PAZ.SAN. VE TİC.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0512",
+      "ad": "ACS BİLGİ TEKNOOJİLERİ - OSMAN BAHADIR"
+    },
+    {
+      "kod": "S0024",
+      "ad": "ADAM OTOMOTİV SANAYİ VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0144",
+      "ad": "ADEM ARSLAN - GOLDEN BİLGİSAYAR"
+    },
+    {
+      "kod": "S0062",
+      "ad": "ADNAN ALKAN"
+    },
+    {
+      "kod": "M0124",
+      "ad": "ADVANCE ULUSLARARASI NAKLİYAT VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0538",
+      "ad": "AERİS TEKNOLOJİ ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "M0154",
+      "ad": "AFRA OFİS KIRTASİYE AMBALAJ TEKSTİL TİC. SAN. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0412",
+      "ad": "AHISKA YAYINEVİ - MUHAMMET KESKİN"
+    },
+    {
+      "kod": "M0319",
+      "ad": "AHMET ALPER NAİLOĞLU"
+    },
+    {
+      "kod": "M0327",
+      "ad": "AIK PROJE TASARIM VE DIŞ TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0486",
+      "ad": "AJİNOMOTO İSTANBUL GIDA SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0393",
+      "ad": "AK TİCARET BOYA VE KİMYA SANAYİ LTD. ŞTİ."
+    },
+    {
+      "kod": "M0170",
+      "ad": "AKADEMİ RAKS SATIŞ VE PAZARLAMA A.Ş."
+    },
+    {
+      "kod": "S0076",
+      "ad": "AKBULUT MATBAACILIK - EROL AKBULUT"
+    },
+    {
+      "kod": "M0182",
+      "ad": "AKÇALI BOYA VE KİMYA SAN. TİC. A.Ş."
+    },
+    {
+      "kod": "M0410",
+      "ad": "AKD EĞİTİM HİZMETLERİ LTD. ŞTİ."
+    },
+    {
+      "kod": "M0011",
+      "ad": "AKDEN TURBO SAN.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0083",
+      "ad": "AKDENİZ KİMYA"
+    },
+    {
+      "kod": "M0204",
+      "ad": "AKDENİZ YAŞ GIDA KONSERVECİLİK SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0024",
+      "ad": "AKKANAT EĞİTİM VE SAĞLIK VAKFI İKTİSADİ İŞLETMESİ"
+    },
+    {
+      "kod": "M0553",
+      "ad": "AKN BUSINESS SOLUTIONS TEKNOLOJİ ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "M0430",
+      "ad": "AKPA ALÜMİNYUM SANAYİ VE TİCARET ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "M0317",
+      "ad": "AKPET AKARYAKIT SANAYİ LTD. ŞTİ."
+    },
+    {
+      "kod": "M0471",
+      "ad": "AKYEL MOTORLU ARAÇLAR SANAYİ VE TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0450",
+      "ad": "AKİS BAĞIMSIZ DENETİM VE SMMM A.Ş."
+    },
+    {
+      "kod": "M0331",
+      "ad": "AL JAZEERA TURK PRODÜKSİYON HİZMETLERİ LTD.ŞTİ."
+    },
+    {
+      "kod": "M0484",
+      "ad": "ALCHEM EUROPE SA MERKEZİ İSVİÇRE İSTANBUL MERKEZ ŞUBESİ"
+    },
+    {
+      "kod": "M0514",
+      "ad": "ALCHEM EUROPE İLAÇ KOZMETİK GIDA A.Ş."
+    },
+    {
+      "kod": "M0042",
+      "ad": "ALFRED PALUKA VE ŞERİKİ KOLLEKTİF ŞİRKETİ"
+    },
+    {
+      "kod": "M0159",
+      "ad": "ALMELEK MATBAA MÜREKKEPLERİ BOYA SANAYİ VE TİC. A.Ş."
+    },
+    {
+      "kod": "M0384",
+      "ad": "ALP ENERJİ SİSTEMLERİ BİL.VE İLET.TEKN.HİZ.SAN.VE TİC. LTD. ŞTİ"
+    },
+    {
+      "kod": "M0437",
+      "ad": "ALTIN KİTAPLAR YAYINEVİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0160",
+      "ad": "ALTINCI DUYU REKLAM FİLM VE KOMÜNİKASYON TİC. A.Ş."
+    },
+    {
+      "kod": "M0443",
+      "ad": "ALTIPARMAK KİMYA SANAYİ VE TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0557",
+      "ad": "ALİ BOZKURT"
+    },
+    {
+      "kod": "M0566",
+      "ad": "ALİBABA LOKUM GIDA PAZARLAMA İTHALAT İHRACAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ"
+    },
+    {
+      "kod": "S0151",
+      "ad": "ALİCAN KARADEMİR"
+    },
+    {
+      "kod": "M0250",
+      "ad": "ANADOLU SATIŞ GRUPLARI OTOMOTİV SAN. VE TİC. A.Ş."
+    },
+    {
+      "kod": "M0219",
+      "ad": "ANADOLU SİGORTA A.Ş. (MERKEZ)"
+    },
+    {
+      "kod": "M0493",
+      "ad": "ANADOLU İSTİF MAKİNALARI SANAYİ VE TİC LTD. ŞTİ."
+    },
+    {
+      "kod": "M0194",
+      "ad": "ANAHTAR ANTREPO TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0285",
+      "ad": "ANC MÜHENDİSLİK MEKANİK ELEKTRİK İNŞAAT SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0206",
+      "ad": "ANKA SERBEST MUHASEBE VE MALİ MÜŞAVİRLİK LTD.ŞTİ."
+    },
+    {
+      "kod": "M0302",
+      "ad": "ANONİM BİLGİSAYAR  & YAZILIM SANAYİ TİCARET - ZÜLFÜ ÇINAR"
+    },
+    {
+      "kod": "M0122",
+      "ad": "ANTAŞ GIDA"
+    },
+    {
+      "kod": "M0567",
+      "ad": "APG HAVACILIK VE TURİZM LİMİTED ŞİRKETİ"
+    },
+    {
+      "kod": "M0211",
+      "ad": "APR TANITIM HİZMETLERİ A.Ş."
+    },
+    {
+      "kod": "S0088",
+      "ad": "ARAS KARGO YURTİÇİ YURT DIŞI TAŞIMACILIK A.Ş."
+    },
+    {
+      "kod": "M0226",
+      "ad": "ARB REKLAM TANTIM VE İLETİŞİM TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0014",
+      "ad": "ARIVA BİLGİSAYAR YAZILIM LTD.ŞTİ."
+    },
+    {
+      "kod": "M0189",
+      "ad": "ARKAS DENİZCİLİK VE NAKLİYAT A.Ş."
+    },
+    {
+      "kod": "M0547",
+      "ad": "ARKAS YAPI ELEMANLARI İNŞAAT TURİZM TEKSTİL SANAYİ VE TİCARET LİMİTED ŞİRKETİ"
+    },
+    {
+      "kod": "M0373",
+      "ad": "ARMAİN TEKNOLOJİ İLETİŞİM İNT. BİL. T.U. VE G.S.T. LTD. ŞTİ"
+    },
+    {
+      "kod": "M0101",
+      "ad": "ARMAĞAN KİMYA SANAYİ VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0413",
+      "ad": "ARMONA DENİZCİLİK A.Ş."
+    },
+    {
+      "kod": "M0544",
+      "ad": "ARTEMIDA PETROKİMYA TİC. LTD.ŞTİ."
+    },
+    {
+      "kod": "S0053",
+      "ad": "ARTIM BİLİŞİM VE ÇÖZÜM DAĞITIM A.Ş."
+    },
+    {
+      "kod": "M0063",
+      "ad": "ARTISOFT BİLİŞİM PROJE VE DANIŞMANLIK - ALPER NAİLOĞLU"
+    },
+    {
+      "kod": "M0530",
+      "ad": "ARYA MAKİNA YEDEK PARÇA VE MÜH. HİZ. SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0257",
+      "ad": "AS PLASTİK AMBALAJ SANAYİ VE TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0507",
+      "ad": "ASAVA SAĞLIK VE KOZMETİK ÜRÜNLERİ İÇ VE DIŞ TİC. A.Ş."
+    },
+    {
+      "kod": "M0146",
+      "ad": "ASD ORMAN ÜRÜNLERİ PAZARLAMA SAN. VE TİC. A.Ş."
+    },
+    {
+      "kod": "S0135",
+      "ad": "ASK BİLGİSAYAR HİZM.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0394",
+      "ad": "ASPENDOS YAYINCILIK VE EĞİTİM - FERDA YENİCİ"
+    },
+    {
+      "kod": "S0101",
+      "ad": "ATA SMMM DENETİM LTD. ŞTİ."
+    },
+    {
+      "kod": "M0087",
+      "ad": "ATICILAR ZAHİRE İNŞ.ENERJİ SAN.VE TİC.LTD.ŞTİ."
+    },
+    {
+      "kod": "S0052",
+      "ad": "ATLANTİS BİLİŞİM PROJE VE DANIŞMANLIK LTD.ŞTİ."
+    },
+    {
+      "kod": "M0532",
+      "ad": "ATLAS PORT DIŞ TİCARET LİMİTED ŞİRKETİ"
+    },
+    {
+      "kod": "M0128",
+      "ad": "ATLASJET INTR.AIRWAYS A.Ş."
+    },
+    {
+      "kod": "M0391",
+      "ad": "ATOTEST LABORATUAR CİHAZLARI İTHL. MÜMES. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0116",
+      "ad": "AV. NERGİZ İNCE"
+    },
+    {
+      "kod": "S0133",
+      "ad": "AV. YEŞİM VAROĞLU"
+    },
+    {
+      "kod": "S0085",
+      "ad": "AVEA İLETİŞİM HİZMETLERİ A.Ş."
+    },
+    {
+      "kod": "S0143",
+      "ad": "AVK.CEMİLE SAÇAKLI"
+    },
+    {
+      "kod": "M0179",
+      "ad": "AXA OYAK SİGORTA A.Ş. (MERKEZ)"
+    },
+    {
+      "kod": "M0125",
+      "ad": "AYDINOĞLU TEKSTİL KONF."
+    },
+    {
+      "kod": "M0300",
+      "ad": "AYIŞIĞI ISITMA SOĞUTMA SİSTEMLERİ İNŞAAT YAPI MALZ. VE GIDA PAZARLAMA LTD. ŞTİ."
+    },
+    {
+      "kod": "M0495",
+      "ad": "AİREP HAVACILIK VE TURİZM A.Ş."
+    },
+    {
+      "kod": "M0479",
+      "ad": "AZEL OUTDOOR SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0344",
+      "ad": "AZTEK"
+    },
+    {
+      "kod": "S0130",
+      "ad": "AZİM OTOMOTİV İTHALAT VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0093",
+      "ad": "AZİM PAZARLAMA VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0133",
+      "ad": "AĞAÇKAKAN YATIRIM ORGANİZASYONU VE DANIŞMANLIĞI TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0518",
+      "ad": "AĞTEKS TEKSTİL SANAYİ VE TİC. LTD.ŞTİ"
+    },
+    {
+      "kod": "M0435",
+      "ad": "BAH EĞİTİM TURİZM GIDA SAN. TİC. A.Ş."
+    },
+    {
+      "kod": "S0141",
+      "ad": "BAMOS OTOMOTİV VE TEKNOLOJİLERİ ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "M0048",
+      "ad": "BANKO OTOMOTİV SAN.TİCARET LTD.ŞTİ."
+    },
+    {
+      "kod": "M0102",
+      "ad": "BANT BORU SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0161",
+      "ad": "BARKODES BİLGİSAYAR SİSTEMLERİ BİLGİ İLETİŞİM YAZILIM VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0038",
+      "ad": "BARWIL UNIVERSAL DENİZCİLİK TAŞIMACILIK TİC. A.Ş."
+    },
+    {
+      "kod": "M0089",
+      "ad": "BAYDEKO MOBİLYA DEKORASYON VE PAZARLAMA LTD.ŞTİ."
+    },
+    {
+      "kod": "M0145",
+      "ad": "BAYKUR GIDA SANAYİ VE TİC. A.Ş."
+    },
+    {
+      "kod": "M0408",
+      "ad": "BAYKUŞOĞLU OTOMOTİV TİCARET VE SANAYİ A.Ş"
+    },
+    {
+      "kod": "M0287",
+      "ad": "BAZZA OTOMOTİV JANT LASTİK VE DIŞ TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0323",
+      "ad": "BAŞAK OTOMOTİV AKSESUAR VE TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0461",
+      "ad": "BAŞARI DAĞITIM KİTAP KIRTASİYE YAYINCILIK VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0472",
+      "ad": "BAŞARIYORUM YAYINLARI SAN. VE TİC. A.Ş."
+    },
+    {
+      "kod": "S0099",
+      "ad": "BAŞKAN OTOMOTİV SAN TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0107",
+      "ad": "BDH BİLİŞİM DESTEK HİZMETLERİ SAN.TİC.A.Ş."
+    },
+    {
+      "kod": "M0345",
+      "ad": "BECTON DICKINSON İTH. İHR. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0111",
+      "ad": "BEKİR AYDOĞDU"
+    },
+    {
+      "kod": "M0386",
+      "ad": "BELTUR BÜYÜK İSTANBUL EĞİTİM VE SAĞLIK YAT. İŞLETME VE TİC. A.Ş."
+    },
+    {
+      "kod": "M0309",
+      "ad": "BENGİ KOMBİ MÜH. ISITMA SOGUTMA ÜRÜNLERİ SAT. PAZ. SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0444",
+      "ad": "BERK PROKİMYA SANAYİ VE TİC. A.Ş."
+    },
+    {
+      "kod": "M0304",
+      "ad": "BERK İLAÇ İTHALAT VE PAZARLAMA A.Ş."
+    },
+    {
+      "kod": "M0115",
+      "ad": "BERK İNŞAAT KİMYA LTD.ŞTİ."
+    },
+    {
+      "kod": "M0043",
+      "ad": "BEST KALE CIVATA MAKİNA TİC. VE SAN. A.Ş"
+    },
+    {
+      "kod": "S0100",
+      "ad": "BETAKOD YAZILIM ÇÖZÜMLERİ AYDIN BURAK BEKCİ"
+    },
+    {
+      "kod": "M0178",
+      "ad": "BMT-SAN BURHAN MAKİNA TEKNOLOJİ SAN. VE TİC. A.Ş."
+    },
+    {
+      "kod": "M0039",
+      "ad": "BNT BİLGİSAYAR DANIŞMANLIK LTD.ŞTİ."
+    },
+    {
+      "kod": "M0311",
+      "ad": "BÖLGE MÜHENDİSLİK DOĞALGAZ İNŞAAT SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0286",
+      "ad": "BONFİLET ET SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0416",
+      "ad": "BORDO SEYAHAT TURİZM LTD. ŞTİ."
+    },
+    {
+      "kod": "S0074",
+      "ad": "BORUSAN OTO SERVİS VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0266",
+      "ad": "BOSAL METAL İŞLEME SANAYİ A.Ş."
+    },
+    {
+      "kod": "M0157",
+      "ad": "BOSKAR İSTİF MAKİNA SANAYİ TİCARET A.Ş."
+    },
+    {
+      "kod": "M0047",
+      "ad": "BOYHAN İNŞAAT TURİZM TİCARET SAN. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0385",
+      "ad": "BOZOK MÜMESSİLLİK MAKİNA KİMYA SANAYİ VE TİCARET A.Ş"
+    },
+    {
+      "kod": "S0061",
+      "ad": "BOĞAZİÇİ ELEKTRİK A.Ş."
+    },
+    {
+      "kod": "M0210",
+      "ad": "BOĞAZİÇİ ÖZEL EĞİTİM HİZMETLERİ A.Ş."
+    },
+    {
+      "kod": "M0002",
+      "ad": "BRODERİ NARİN İŞLEMELİ KUMAŞ SAN. A.Ş"
+    },
+    {
+      "kod": "M0360",
+      "ad": "BTB DEKORASYON VE DIŞ TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0213",
+      "ad": "BUKOS TURİZM YATIRIM SANAYİ VE TİC. A.Ş."
+    },
+    {
+      "kod": "M0064",
+      "ad": "BURAKKAYA TURİZM YATIRIMLARI A.Ş"
+    },
+    {
+      "kod": "M0172",
+      "ad": "BİLGİTİM BİLGİSAYAR ELEKTRONİK SANAYİ TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "S0022",
+      "ad": "BİMEKS A.Ş."
+    },
+    {
+      "kod": "M0035",
+      "ad": "BİRLEŞİK DANIŞMANLAR TELEKOM. DAN. HİZM. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0294",
+      "ad": "BİSEM DANIŞMANLIK MÜHENDİSLİK TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0529",
+      "ad": "C1 INTERNATIONAL TELEKOMÜNİKASYON İTHALAT İHRACAT   SANAYİ VE TİCARET LİMİTED ŞİRKETİ"
+    },
+    {
+      "kod": "M0006",
+      "ad": "CAMEL EGE"
+    },
+    {
+      "kod": "M0137",
+      "ad": "CANBERK ELEKTRİK ELEKTRONİK BİLGİSAYAR TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0037",
+      "ad": "CATALYS"
+    },
+    {
+      "kod": "M0139",
+      "ad": "CATONİ DENİZ İŞLERİ A.Ş."
+    },
+    {
+      "kod": "M0147",
+      "ad": "CATONİ HAVA VE DENİZ TAŞIMACILIK LTD. ŞTİ."
+    },
+    {
+      "kod": "M0151",
+      "ad": "CATONİ INTERLINK NAKLİYAT LTD. ŞTİ."
+    },
+    {
+      "kod": "M0131",
+      "ad": "CBM BİLGİSAYAR VE AĞ HİZMETLERİ TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0053",
+      "ad": "ÇEKSAN GEMİ İNŞA ÇELİK SAN. VE TİC. A.Ş"
+    },
+    {
+      "kod": "M0082",
+      "ad": "ÇELİK ÇORAP SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0351",
+      "ad": "ÇELİK GÜLERSOY VAKFI"
+    },
+    {
+      "kod": "S0105",
+      "ad": "ÇELİK MOTOR TİCARET A.Ş."
+    },
+    {
+      "kod": "M0198",
+      "ad": "ÇELİK TIRSAN KAROSER SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0537",
+      "ad": "CHEMPOL PLASTİK SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0093",
+      "ad": "CK BOĞAZİÇİ ELEKTRİK PERAKENDE SATIŞ A.Ş."
+    },
+    {
+      "kod": "M0541",
+      "ad": "CNH YAPIŞTIRICI KİMYA SANAYİ TİCARET A. Ş."
+    },
+    {
+      "kod": "M0059",
+      "ad": "CONTİNENTAL KİMYA SANAYİ VE DIŞ TİCARET A.Ş"
+    },
+    {
+      "kod": "M0084",
+      "ad": "COŞKUN ÇELİK METAL SANAYİ VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0196",
+      "ad": "ÇUKUROVA ISI SİSTEMLERİ SANAYİ VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0427",
+      "ad": "CUMHUR BAŞTÜRK - DÖNENCE FİLM"
+    },
+    {
+      "kod": "S0126",
+      "ad": "ÇİĞDEM ORMAN ÜRÜNLERİ MAK.İNŞ.TEK.SAN.VE TİC.LTD.ŞTİ"
+    },
+    {
+      "kod": "M0341",
+      "ad": "D-RATE MALİ MÜŞAVİRLİK LTD.ŞTİ."
+    },
+    {
+      "kod": "M0228",
+      "ad": "DAMLA YAYINEVİ BASIM YAYIN VE DAĞITIM SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0078",
+      "ad": "DANIŞ SERBEST MUHASEBE VE MALİ MÜŞAVİRLİK LTD. ŞTİ."
+    },
+    {
+      "kod": "S0008",
+      "ad": "DATA BİLGİSAYAR ELEK.KONTROL SİS.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0570",
+      "ad": "DATA MARKET BİLGİ HİZMETLERİ ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "M0382",
+      "ad": "DATA MARKET YAZILIM DANIŞMANLIK SAN. VE TİC LTD. ŞTİ."
+    },
+    {
+      "kod": "M0255",
+      "ad": "DATA SİSTEM GENEL OTOMASYON SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0067",
+      "ad": "DBI YAZILIM TEKNOLOJİLERİ A.Ş."
+    },
+    {
+      "kod": "M0542",
+      "ad": "DCT TRADİNG DIŞ TİCARET ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "M0104",
+      "ad": "DE-KA ELEKTROTEKNİK SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0003",
+      "ad": "DELPHI AUTOMOTIVE SYSTEMS LTD. ŞTİ."
+    },
+    {
+      "kod": "M0468",
+      "ad": "DEMPAR YEDEK PARÇA İTHALAT İHRACAT SANAYİ VE TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "S0155",
+      "ad": "DENKLEM BİLGİ İŞLEM HİZMETLERİ PAZARLAMA VE SANAYİ TİCARET LİMİTED ŞİRKETİ"
+    },
+    {
+      "kod": "M0057",
+      "ad": "DENİZ BİLGİSAYAR ELEKT. REKLAM  KIRTASİYE MOBİLYA SAN. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0329",
+      "ad": "DENİZ FENERİ ISITMA SOĞUTMA DOĞALGAZ İNŞAAT SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0192",
+      "ad": "DENİZ MALZEME LTD. ŞTİ."
+    },
+    {
+      "kod": "M0246",
+      "ad": "DENİZCİLER TURİZM VE DENİZCİLİK A.Ş."
+    },
+    {
+      "kod": "S0034",
+      "ad": "DEPAR PAZARLAMA LTD.ŞTİ."
+    },
+    {
+      "kod": "M0368",
+      "ad": "DESOFİS KIRTASİYE TEMİZLİK VE GIDA SANAYİ TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0021",
+      "ad": "DETA BİLGİSAYAR HİZMETLERİ SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0034",
+      "ad": "DK STÜDYO BİLGİSAYAR VE İLETİŞİM HİZ.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0476",
+      "ad": "DM YAZILIM VE OTOMASYON TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0267",
+      "ad": "DNA PROJE VE DANIŞMANLIK TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0376",
+      "ad": "DO-RE DIŞ TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0510",
+      "ad": "DORO DİZAYN TEKSTİL SAN. VE DIŞ TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0098",
+      "ad": "DORUK2000 TUR. GIDA ORGANİZASYON TEMİZLİK İNŞAAT SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0026",
+      "ad": "DOW TÜRKİYE KİMYA SANAYİ VE LTD. ŞTİ."
+    },
+    {
+      "kod": "M0365",
+      "ad": "DOĞA MÜHENDİSLİK ISITMA - ONUR BULUT"
+    },
+    {
+      "kod": "M0498",
+      "ad": "DOĞAN DERİ GİYİM SANAYİ İÇ VE DIŞ TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0112",
+      "ad": "DOĞRU DONANIM YAZILIM BİLİŞİM HİZMETLERİ PAZARLAMA SANAYİ VE TİCARET LTD.ŞTİ."
+    },
+    {
+      "kod": "M0190",
+      "ad": "DİKEY ISI MÜHENDİSLİK İNŞAAT TAAH. PAZARLAMA TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0521",
+      "ad": "DİKMEN MÜZİK ALETLERİ SAN.VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0375",
+      "ad": "DİLOVASI ORGANİZE SANAYİ BÖLGE MÜDÜRLÜĞÜ"
+    },
+    {
+      "kod": "M0027",
+      "ad": "DİMTAŞ DANIŞMANLIK VE MİMARLIK A.Ş."
+    },
+    {
+      "kod": "M0256",
+      "ad": "DİNAMİK OTOMOTİV GIDA TEKSTİL İTH. İHR. SANAYİ VE TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0223",
+      "ad": "DİYEZ YAZILIM LTD. ŞTİ."
+    },
+    {
+      "kod": "M0478",
+      "ad": "E-NET ÇÖZÜMLER BİLİŞİM TEKNOLOJİLERİ VE DANIŞMANLIK A.Ş."
+    },
+    {
+      "kod": "S0079",
+      "ad": "EBİMTES BİLGİ TEKNOLOJİLERİ SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0140",
+      "ad": "ECE ARMATÜR SANAYİ TİCARET A.Ş."
+    },
+    {
+      "kod": "M0081",
+      "ad": "EDİN EMLAK YAPI TURİZM TİCARET A.Ş."
+    },
+    {
+      "kod": "M0158",
+      "ad": "EFESTUR TURİZM İŞLETMELERİ A.Ş."
+    },
+    {
+      "kod": "M0244",
+      "ad": "EFTAŞ ELEKTRONİK FİLM TİCARET VE SANAYİ A.Ş."
+    },
+    {
+      "kod": "M0060",
+      "ad": "EGE GIDA VE KİMYASALLARI SAN. TİC. A.Ş"
+    },
+    {
+      "kod": "M0270",
+      "ad": "EGE PROJE VE YAZILIM BİLGİSAYAR SİSTEMLERİ SAN.TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0002",
+      "ad": "EGELİNK"
+    },
+    {
+      "kod": "M0262",
+      "ad": "EKOPONS MADENCİLİK SAN. VE DIŞ TİC. A.Ş."
+    },
+    {
+      "kod": "S0140",
+      "ad": "EKREM ÖZANDIÇLAR OTO YEDEK PARÇA SANAYİ VE TİC. A.Ş."
+    },
+    {
+      "kod": "M0232",
+      "ad": "EKSEN EĞİTİM KURUMLARI A.Ş."
+    },
+    {
+      "kod": "M0029",
+      "ad": "EKSPİTA TEKSTİL SANAYİ DIŞ TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0214",
+      "ad": "EKU FREN KAMPANA VE DÖKÜM SAN.A.Ş."
+    },
+    {
+      "kod": "S0084",
+      "ad": "ELEKTRONİK BİLGİ GÜVENLİĞİ A.Ş."
+    },
+    {
+      "kod": "M0225",
+      "ad": "ELİT DOĞALGAZ MAKİNA İNŞ. OTOMOTİV SAN.TİC.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0456",
+      "ad": "EMAS MAKİNA SANAYİ A.Ş."
+    },
+    {
+      "kod": "M0030",
+      "ad": "EMEK İNŞAAT TAAHHÜT VE TİCARET ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "S0039",
+      "ad": "EMRE KIRTASİYECİLİK LTD.ŞTİ."
+    },
+    {
+      "kod": "M0531",
+      "ad": "EMİN YAPI MALZEMELERİ SAN. VE TİC. A.Ş."
+    },
+    {
+      "kod": "S0055",
+      "ad": "ENES OTOMOTİV FEVZİ İLERİ"
+    },
+    {
+      "kod": "M0374",
+      "ad": "ENGİN BAĞIMSIZ DENETİM VE SERBEST MUHASEBECİLİK MALİ MÜŞAVİRLİK A.Ş."
+    },
+    {
+      "kod": "M0074",
+      "ad": "ENPAY ENDÜSTRİYEL PAZARLAMA VE YATIRIM A.Ş"
+    },
+    {
+      "kod": "M0005",
+      "ad": "ENTA TELEKOMİNİKASYON"
+    },
+    {
+      "kod": "S0010",
+      "ad": "ENTER BİLGİSAYAR"
+    },
+    {
+      "kod": "M0191",
+      "ad": "ENTER RADYO VE TELEVİZYON PROGRAM YAPIMCILIĞI LTD. ŞTİ."
+    },
+    {
+      "kod": "M0185",
+      "ad": "EQUINOX MÜZİK YAPIM ORGANİZASYON TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0186",
+      "ad": "ERA METALURJİ SANAYİ VE TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0237",
+      "ad": "ERA YAYINCILIK ORGANİZSAYON REKLAM VE AJANS HİZMETLERİ LTD. ŞTİ."
+    },
+    {
+      "kod": "M0320",
+      "ad": "ERANET BİLGİ İŞLEM BİLGİSAYAR HİZMETLERİ - MUHİDDİN DENİZ"
+    },
+    {
+      "kod": "S0065",
+      "ad": "ERANET BİLGİ İŞLEM BİLGİSAYAR HİZMETLERİ - MUHİDDİN DENİZ"
+    },
+    {
+      "kod": "M0127",
+      "ad": "ERDAL BÜYÜKKAYA"
+    },
+    {
+      "kod": "M0397",
+      "ad": "ERDEM ÖZŞEN"
+    },
+    {
+      "kod": "M0421",
+      "ad": "EREN BAĞIMSIZ DENETİM A.Ş."
+    },
+    {
+      "kod": "M0049",
+      "ad": "ERK HİZMET İŞLETMECİLİĞİ VE DANIŞMANLIK A.Ş"
+    },
+    {
+      "kod": "M0264",
+      "ad": "ERKAN PLASTİK MAKİNE KALIP SANATİ VE TİCARET LTD.ŞTİ."
+    },
+    {
+      "kod": "S0006",
+      "ad": "ERSA İTHALAT VE TİC A.Ş."
+    },
+    {
+      "kod": "M0010",
+      "ad": "ES ECZA DEPOSU İSTANBUL ŞUBESİ"
+    },
+    {
+      "kod": "M0367",
+      "ad": "ESFA MİMARLIK MÜHENDİSLİK VE RESTORASYON TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0449",
+      "ad": "ESMER BİJUTERİ HEDİYELİK EŞYA TEKSTİL SAN. VE TİC.LTD. ŞTİ."
+    },
+    {
+      "kod": "M0563",
+      "ad": "ESRA SARAÇOĞLU"
+    },
+    {
+      "kod": "M0451",
+      "ad": "ESS MÜHENDİSLİK MEKANİK VE ENERJİ SİSTEMLERİ LTD.ŞTİ."
+    },
+    {
+      "kod": "M0396",
+      "ad": "ETERATİON A.Ş."
+    },
+    {
+      "kod": "M0334",
+      "ad": "EURO KİMYA SAN. VE TİC. A.Ş."
+    },
+    {
+      "kod": "S0043",
+      "ad": "F.AYLİN KALAFATOĞLU"
+    },
+    {
+      "kod": "S0016",
+      "ad": "F1 BİLGİSAYAR SAVAŞ DEMİR"
+    },
+    {
+      "kod": "M0372",
+      "ad": "FALEZ EV GEREÇLERİ PAZARLAMA DIŞ TİC. A.Ş."
+    },
+    {
+      "kod": "M0356",
+      "ad": "FARK KOMBİ İKLİMLENDİRME SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0071",
+      "ad": "FATİH SINAİ MAMULLER PAZARLAMA A.Ş."
+    },
+    {
+      "kod": "M0155",
+      "ad": "FATİH TELEFON TELEKOMÜNİKASYON VE BÜRO MAK.LTD.ŞTİ"
+    },
+    {
+      "kod": "M0388",
+      "ad": "FAVORİ GIDA SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "S0033",
+      "ad": "FEM DANIŞMANLIK PAZARLAMA LTD.ŞTİ."
+    },
+    {
+      "kod": "M0227",
+      "ad": "FENCAP PLASTİK AMBALAJ SANAYİ LTD. ŞTİ."
+    },
+    {
+      "kod": "M0460",
+      "ad": "FENİKS ETİKET VE AMBALAJ SAN. TİC. LTD.ŞTİ."
+    },
+    {
+      "kod": "M0569",
+      "ad": "FENİKS ETİKET VE AMBALAJ SANAYİ ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "M0552",
+      "ad": "FERR PHARMA İLAÇ LTD. ŞTİ."
+    },
+    {
+      "kod": "M0419",
+      "ad": "FG EUROPE KLİMA TEKNOLOJİLERİ SANAYİ VE TİC. A.Ş."
+    },
+    {
+      "kod": "M0441",
+      "ad": "FINE FOOD LOJİSTİK PAZARLAMA A.Ş."
+    },
+    {
+      "kod": "M0378",
+      "ad": "FKB PETROL TAŞIMACILIK İTHALAT İHRACAT SAN. TİC. A.Ş."
+    },
+    {
+      "kod": "S0142",
+      "ad": "FOL YAZILIM ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "M0528",
+      "ad": "FOR YOU MODA DIŞ TİC.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0370",
+      "ad": "FORTES MÜHENDİSLİK DOĞALGAZ İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ"
+    },
+    {
+      "kod": "M0533",
+      "ad": "FRAUAL OTOMOTİV YAN SANAYİ ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "M0091",
+      "ad": "FRİGO DUMAN A.Ş."
+    },
+    {
+      "kod": "M0562",
+      "ad": "FUTURE CONSULTANCY İLAÇ VE DIŞ TİC A.Ş"
+    },
+    {
+      "kod": "M0446",
+      "ad": "FİNAL PAZARLAMA KİT KIRT YAY VE BİLİŞİM HİZ TİC LTD ŞTİ"
+    },
+    {
+      "kod": "M0218",
+      "ad": "GANİ GEMİ VE İŞ MAKİNALARI TİCARET SAN. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0243",
+      "ad": "GARANTİ SİGORTA A.Ş. (MERKEZ)"
+    },
+    {
+      "kod": "I0001",
+      "ad": "GAZİ DOĞANGÜNEŞ"
+    },
+    {
+      "kod": "M0482",
+      "ad": "GAZİLER YAPI MALZEMELERİ İNŞAAT PAZ.SAN.İÇ VE DIŞ TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0216",
+      "ad": "GEMİCİOĞLU HUKUK BÜROSU - ORHAN GEMİCİOĞLU"
+    },
+    {
+      "kod": "M0278",
+      "ad": "GENETLAB BİLGİ TEKNOLOJİLERİ SANAYİ VE TİC. A.Ş."
+    },
+    {
+      "kod": "S0019",
+      "ad": "GERÇEK OTOMOBİLCİLİK A.Ş."
+    },
+    {
+      "kod": "S0056",
+      "ad": "GERÇEK SİGORTA ARACILIK HİZMETLERİ A.Ş."
+    },
+    {
+      "kod": "M0107",
+      "ad": "GEREKLİ REKLAM VE PROMOSYON ÜRÜNLERİ TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0325",
+      "ad": "GK PETROL ÜRÜNLERİ SAN. VE TİC. A.Ş."
+    },
+    {
+      "kod": "M0120",
+      "ad": "GÖKDOĞAN ZÜCCACİYE - A. KEMAL DOĞAN"
+    },
+    {
+      "kod": "M0021",
+      "ad": "GÖKSEL VURKUN 34 BL 4605"
+    },
+    {
+      "kod": "M0314",
+      "ad": "GOLF SPOR FAALİYETLERİ VE TURİZM YATIRIMLARI A.Ş."
+    },
+    {
+      "kod": "S0115",
+      "ad": "GONCA SEYREK UZMAN OTOMOTİV"
+    },
+    {
+      "kod": "M0390",
+      "ad": "GÖNDÖR DIŞ TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0358",
+      "ad": "GÖZDE BİLGİ İŞLEM SİSTEMLERİ SAN. VE TİC. LTD. ŞTİ"
+    },
+    {
+      "kod": "M0052",
+      "ad": "GREEN CHEMICALS LTD. ŞTİ."
+    },
+    {
+      "kod": "M0346",
+      "ad": "GRUPANYA İNTERNET HİZMETLERİ İLETİŞİM ORGANİZASYON TANITIM VE PAZARLAMA A.Ş."
+    },
+    {
+      "kod": "M0200",
+      "ad": "GÜL PRES DÖKÜM SANAYİ A.Ş."
+    },
+    {
+      "kod": "S0125",
+      "ad": "GÜLMAR GIDA OTO DAY.TÜK.MAL.SAN.TİC.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0176",
+      "ad": "GÜN DANIŞMANLIK HİZMETLERİ LTD. ŞTİ."
+    },
+    {
+      "kod": "M0504",
+      "ad": "GÜNEŞ ELEKTRONİK CİHAZLAR VE TİC. LTD.ŞTİ."
+    },
+    {
+      "kod": "S0050",
+      "ad": "GÜRKAN OTO - GÜLSÜM BEDİR"
+    },
+    {
+      "kod": "M0092",
+      "ad": "GİSAD GLOBAL SOURCING TEKSTİL SAN. TİC. A.Ş."
+    },
+    {
+      "kod": "M0065",
+      "ad": "GİSAD TEKSTİL HAMMADDELERİ SANAYİ VE TİC. A.Ş"
+    },
+    {
+      "kod": "S0046",
+      "ad": "GİZEM OTOMOTİV TAŞIMACILIK SANAYİ İÇ VE DIŞ TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0106",
+      "ad": "HA-KAN METAL MAMULLERİ İMALAT SANAYİ VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "I0003",
+      "ad": "HACI HASAN BAĞBAŞI İŞ AVANSI"
+    },
+    {
+      "kod": "M0535",
+      "ad": "HACIYATMAZ FİLM PRODÜKSİYON LTD.ŞTİ."
+    },
+    {
+      "kod": "M0163",
+      "ad": "HAKKIN PAYDAŞLI"
+    },
+    {
+      "kod": "M0215",
+      "ad": "HARMAN EKMEK UNLU MAMULLER PAZARLAMA TURİZM İNŞAAT SAN.TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0096",
+      "ad": "HASAN MİMİROĞLU"
+    },
+    {
+      "kod": "M0072",
+      "ad": "HASEL İSTİF MAKİNALARI SAN. VE TİC. A.Ş"
+    },
+    {
+      "kod": "M0088",
+      "ad": "HAYAT GİYİM SANAYİ VE TİCARET LTD.ŞTİ."
+    },
+    {
+      "kod": "S0005",
+      "ad": "HECKOM BİLGİSAYAR DANIŞMANLIK"
+    },
+    {
+      "kod": "M0330",
+      "ad": "HEDEF AYAKKABI İNŞAAT SANAYİ VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0271",
+      "ad": "HELUKABEL KABLO SANAYİ VE TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0411",
+      "ad": "HER ENERJİ VE ÇEVRE TEKNOLOJİLERİ ELEKTRİK ÜRETİM A.Ş."
+    },
+    {
+      "kod": "S0044",
+      "ad": "HEWLETT-PACKARD TEKNOLOJİ ÇÖZÜMLERİ LİMİTED ŞİRKETİ"
+    },
+    {
+      "kod": "M0404",
+      "ad": "HIS ULUSLAR ARASI TURİZM SEYAHAT ACENTASI LTD. ŞTİ"
+    },
+    {
+      "kod": "M0423",
+      "ad": "HÜRRİYET YAPI MALZEMELERİ SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0111",
+      "ad": "HÜSAMETTİN YÜKSEL"
+    },
+    {
+      "kod": "M0169",
+      "ad": "HÜSEYİN NAMİ ÖZERDEN İZOLASYON LEVHASI BALONLU NAYLON AMBALAJLAMA VE İNŞAAT SAN. TİC. A.Ş."
+    },
+    {
+      "kod": "S0109",
+      "ad": "HİDAYET OK - GRİNET İNTERNET VE YAZILIM HİZMETLERİ"
+    },
+    {
+      "kod": "M0462",
+      "ad": "HİTİT SERAMİK SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0305",
+      "ad": "INTER-SOURCE UK LTD.-TÜRKİYE İSTANBUL İRTİBAT BÜROSU"
+    },
+    {
+      "kod": "M0071",
+      "ad": "ITD İLETİŞİM TEKNOLOJİ VE DANIŞ.A.Ş."
+    },
+    {
+      "kod": "M0259",
+      "ad": "IŞIK BOYA KİMYA VE YAPI MALZ. TİC. VE SAN. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0338",
+      "ad": "KADOOĞLU OTELCİLİK TURİZM İNŞ. VE TİC. A.Ş."
+    },
+    {
+      "kod": "M0342",
+      "ad": "KADOOĞLU OTELCİLİK TURİZM İNŞ. VE TİC. A.Ş."
+    },
+    {
+      "kod": "M0361",
+      "ad": "KADOOĞLU OTELCİLİK TURİZM İNŞAAT TİC. A.Ş."
+    },
+    {
+      "kod": "M0197",
+      "ad": "KADOOĞLU PETROLCÜLÜK TAŞIMACILIK TİC.SAN.A.Ş."
+    },
+    {
+      "kod": "M0316",
+      "ad": "KADOOĞLU YAĞ SANAYİ VE TİC. A.Ş."
+    },
+    {
+      "kod": "S0030",
+      "ad": "KAHRAMAN NEŞRİYAT OFSET SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0417",
+      "ad": "KAR ALÜMİNYUM SANAYİ VE TİC. A.Ş."
+    },
+    {
+      "kod": "M0247",
+      "ad": "KAR-SU ÇAMLICA KÖYÜ SU İŞLETMELERİ A.Ş."
+    },
+    {
+      "kod": "M0040",
+      "ad": "KARACA ZÜCCACİYE A.Ş."
+    },
+    {
+      "kod": "M0324",
+      "ad": "KARADENİZ İNŞAAT VE BETON SAN. A.Ş."
+    },
+    {
+      "kod": "M0167",
+      "ad": "KARAKÖY TELEVİZYON VE RADYO YAYINCILIK TİC. A.Ş."
+    },
+    {
+      "kod": "M0288",
+      "ad": "KARDEŞLER OTO - NAİM DÜVENCİGİL"
+    },
+    {
+      "kod": "M0401",
+      "ad": "KARMOD PREFABRİK YAPI TEKNOLOJİLERİ İNŞAAT SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0013",
+      "ad": "KARTECH BİL.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0525",
+      "ad": "KARTONSAN KARTON SANAYİ VE TİC. A.Ş."
+    },
+    {
+      "kod": "M0364",
+      "ad": "KAVRAM ÖZEL EĞİTİM HİZMETLERİ VE TURİZM İŞLEMLESİ A.Ş."
+    },
+    {
+      "kod": "M0073",
+      "ad": "KAYARLAR ET SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0474",
+      "ad": "KAYROS YAYINCILIK VE BİLGİSAYAR SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0363",
+      "ad": "KEMER YAPI VE TURİZM A.Ş."
+    },
+    {
+      "kod": "M0387",
+      "ad": "KMS MOBİLYA BAĞLANTI SİST. SAN. ve TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0080",
+      "ad": "KNB ÇAKIR OTO.TİC.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0465",
+      "ad": "KOBE POLİÜRETAN SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "S0040",
+      "ad": "KOÇ AJANS MATBAACILIK LTD.ŞTİ."
+    },
+    {
+      "kod": "S0134",
+      "ad": "KOCASİNAN BİRLİK OTOMOTİV SANAYİ VE DIŞ TİCARET LİMİTED ŞİRKETİ"
+    },
+    {
+      "kod": "M0428",
+      "ad": "KOMBİ KLİMA SHOP TİCARET ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "M0347",
+      "ad": "KORLAS OTOMOTİV SAN.VE TİC LTD. ŞTİ."
+    },
+    {
+      "kod": "S0067",
+      "ad": "KOSİFLER OTO SERVİS VE TİC.A.Ş."
+    },
+    {
+      "kod": "M0162",
+      "ad": "KTT KONTEYNER TAŞIMACILIK LTD. ŞTİ."
+    },
+    {
+      "kod": "M0560",
+      "ad": "KUBİLAY KUTLAY MÜHENDİSLİK VE İNŞ. SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0426",
+      "ad": "KÜKRE GIDA VE İHT. MAD. NAK. ÖZEL EĞT. HİZ. TİC. SAN. A.Ş."
+    },
+    {
+      "kod": "M0013",
+      "ad": "KUMBARACIBAŞI TURİZM TİC.A.Ş."
+    },
+    {
+      "kod": "M0090",
+      "ad": "KURTSAN TARIM ENDÜSTRİ MAK.  SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0099",
+      "ad": "KURTSAN İLAÇLARI A.Ş."
+    },
+    {
+      "kod": "M0132",
+      "ad": "KUŞADASI ÖZEL AĞIZ VE DİŞ SAĞLIĞI HİZMETLERİ TUR.TİC. LTD. ŞTİ - BÜLENT KENİR"
+    },
+    {
+      "kod": "M0434",
+      "ad": "KİL SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0371",
+      "ad": "KİT DANIŞMANLIK - MERT ONAY"
+    },
+    {
+      "kod": "M0483",
+      "ad": "LAL DANIŞMANLIK DIŞ TİCARET PAZARLAMA SAN. VE TİC. LTD.ŞTİ."
+    },
+    {
+      "kod": "M0491",
+      "ad": "LARUS YAYINEVİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0381",
+      "ad": "LASTİK PABUÇ TEKSTİL VE PAZARLAMA SAN.TİC. A.Ş."
+    },
+    {
+      "kod": "M0439",
+      "ad": "LATİA CFM BİNA YÖNETİMİ VE İNŞAAT TİC. A.Ş."
+    },
+    {
+      "kod": "S0102",
+      "ad": "LOGO ELEKTRONİK TİCARET HİZMETLERİ A.Ş."
+    },
+    {
+      "kod": "S0081",
+      "ad": "LOGO YAZILIM SAN. VE TİC. A.Ş."
+    },
+    {
+      "kod": "M0406",
+      "ad": "LUNA COATİNGS KİMYA SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0254",
+      "ad": "LİDER ÇİKOLATA VE GIDA SANAYİ A.Ş."
+    },
+    {
+      "kod": "M0485",
+      "ad": "MAÇKA YAYINCILIK VE EĞLENCE A.Ş."
+    },
+    {
+      "kod": "M0558",
+      "ad": "MAHİR ENDÜSTRİYEL PLASTİK VE KALIP SANAYİ TİCARET LİMİTED ŞİRKETİ"
+    },
+    {
+      "kod": "M0184",
+      "ad": "MAK GRUP TEMİZLİK TURİZM İNŞAAT GIDA LTD. ŞTİ."
+    },
+    {
+      "kod": "M0398",
+      "ad": "MAKRO BOYA VE KİMYA SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0420",
+      "ad": "MAKSOİL TURKAYGAZ AKARYAKIT TEKS. NAK. İNŞ. SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0123",
+      "ad": "MAKTEL MAKİNA VE TEL SAN. A.Ş."
+    },
+    {
+      "kod": "M0248",
+      "ad": "MAN POWER İNSAN KAYNALARI LTD. ŞTİ."
+    },
+    {
+      "kod": "M0337",
+      "ad": "MANÇO HADİ MİMARLIK DEKORASYON İNŞAAT SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0539",
+      "ad": "MANE AROMA VE ESANS SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0366",
+      "ad": "MARKEM POLİMER SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0066",
+      "ad": "MARKOM LEOBURNETT REKLAM HİZMETLERİ A.Ş"
+    },
+    {
+      "kod": "S0004",
+      "ad": "MARMARA BİLGİSAYAR ÖZER AKKIN"
+    },
+    {
+      "kod": "M0399",
+      "ad": "MARPOL PARLATICI SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0418",
+      "ad": "MASUMİYET VAKFI İKTİSADİ İŞLETMESİ"
+    },
+    {
+      "kod": "M0203",
+      "ad": "MEDTEK ELEKTRONİK TIBBİ CİHAZLAR TİCARET SANAYİ A.Ş."
+    },
+    {
+      "kod": "S0118",
+      "ad": "MEDİA MARKT TURKEY"
+    },
+    {
+      "kod": "M0175",
+      "ad": "MEGA ZİRAAT MAKİNALARI SANAYİ VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0123",
+      "ad": "MEHMET YILDIRIM HÜREL MOBİLYA"
+    },
+    {
+      "kod": "M0297",
+      "ad": "MEHMETOĞLU İÇ VE DIŞ TİC. A.Ş."
+    },
+    {
+      "kod": "M0481",
+      "ad": "MEKKE MEKANİK DOĞALGAZ ISITMA SOĞ.MÜHENDİSLİK SAN. TİC. A.Ş."
+    },
+    {
+      "kod": "M0202",
+      "ad": "MELTEM METAL MAKİNE SANAYİ İÇ VE DIŞ TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0146",
+      "ad": "MEPSAN PETROL CİHAZLARI SANAYİ TİCARET A.Ş."
+    },
+    {
+      "kod": "M0407",
+      "ad": "MERCAN SATIŞ VE DAĞITIM TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0571",
+      "ad": "MERSEL GRUP İTHALAT İHRACAT LİMİTED ŞİRKETİ"
+    },
+    {
+      "kod": "M0019",
+      "ad": "MET İPLİK SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0520",
+      "ad": "METROSİTE İNŞAAT MÜŞ HİZ. VE TİC. A.Ş."
+    },
+    {
+      "kod": "M0253",
+      "ad": "MEVLÜT EMEK"
+    },
+    {
+      "kod": "M0112",
+      "ad": "MEVSİM DÜĞME KEMER AKSESUAR SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0119",
+      "ad": "MEXON PROJE VE DANIŞMANLIK SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0130",
+      "ad": "MF YATIRIM VE YÖNETİM LTD. ŞTİ."
+    },
+    {
+      "kod": "M0546",
+      "ad": "MKS METAL KAPI KEPENK SİSTEMLERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ"
+    },
+    {
+      "kod": "M0076",
+      "ad": "MKS-DEVO TEKSTİL VE KİM.MADDELER SAN. TİC. A.Ş."
+    },
+    {
+      "kod": "M0549",
+      "ad": "MLPH İNTERNATİONAL SAĞLIK TURİZMİ DANIŞMANLIK HİZMETLERİ LİMİTED ŞİRKETİ"
+    },
+    {
+      "kod": "M0148",
+      "ad": "MMZ ONUR BORU PROFİL ÜRETİM SAN. VE TİC. A.Ş."
+    },
+    {
+      "kod": "M0336",
+      "ad": "MODAJENİK İNTERNET HİZMETLERİ TANITIM PAZARLAMA VE TİCARET ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "M0258",
+      "ad": "MORGÜL GIDA TEMİZLİK LTD. ŞTİ."
+    },
+    {
+      "kod": "S0063",
+      "ad": "MORTAŞ SAN. YAT. VE PAZ. A.Ş."
+    },
+    {
+      "kod": "M0508",
+      "ad": "MOYAP MODERN YAPI MALZEMELERİ SAN.VE TİC.A.Ş."
+    },
+    {
+      "kod": "M0489",
+      "ad": "MP HOTEL MANAGEMENT TURZ. İNŞ. YAT. TİC. A.Ş."
+    },
+    {
+      "kod": "M0442",
+      "ad": "MP TURKEY TURİZM A.Ş"
+    },
+    {
+      "kod": "M0023",
+      "ad": "MP İNŞAAT SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0085",
+      "ad": "MS MOTOR SERVİCE İSTANBUL DIŞ TİCARET VE PAZARLAMA A.Ş."
+    },
+    {
+      "kod": "S0090",
+      "ad": "MTM OTOMOTİV LASTİK.TİC.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0281",
+      "ad": "MÜGESAN MÜHENDİSLİK VE GEMİ SANAYİ A.Ş."
+    },
+    {
+      "kod": "S0028",
+      "ad": "MULTI MEDIA BİLGİSAYAR"
+    },
+    {
+      "kod": "S0121",
+      "ad": "MURAT ALYAN"
+    },
+    {
+      "kod": "S0035",
+      "ad": "MURAT ELEKTRONİK"
+    },
+    {
+      "kod": "S0073",
+      "ad": "MURAT URAZ"
+    },
+    {
+      "kod": "M0242",
+      "ad": "MURATBEY GIDA VE SÜT ÜRÜNLERİ SANAYİ VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0124",
+      "ad": "MUSTAFA HAMALI"
+    },
+    {
+      "kod": "M0114",
+      "ad": "MUTSEL GIDA KOZMETİK DANIŞMANLIK SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0020",
+      "ad": "MX BİLİŞİM ADEM ARSLAN"
+    },
+    {
+      "kod": "M0022",
+      "ad": "MİDAS YAZILIM BİLGİ TEKNOLOJİLERİ TURİZM SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0011",
+      "ad": "MİDAS YAZILIM SAN.TİC.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0322",
+      "ad": "MİL MADENİ YAĞ PETROL ÜRÜNLERİ KİMYA SAN. TİC. AŞ."
+    },
+    {
+      "kod": "M0292",
+      "ad": "MİPET PETROL ÜRÜNLERİ TAŞ. SANAYİ VE TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0156",
+      "ad": "MİRA ZÜCCACİYE VE ELEKTRİKLİ EV ALETLERİ İTH. İHR. SAN. TİC. LTD.ŞTİ."
+    },
+    {
+      "kod": "M0195",
+      "ad": "NACİ GÜLLÜCE - MOR AJANS REKLAM & TANITIM"
+    },
+    {
+      "kod": "M0183",
+      "ad": "NAMET GIDA SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0519",
+      "ad": "NAR EĞİTİM VE DANIŞMANLIK MERKEZİ LTD.ŞTİ."
+    },
+    {
+      "kod": "M0273",
+      "ad": "NASATEX TEKS. İNŞ. GIDA SAN. OTO. VE DIŞ TİC.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0032",
+      "ad": "NATIONAL TOURS TURKEY"
+    },
+    {
+      "kod": "M0556",
+      "ad": "NAYMAN KUMAŞ KONF. TİC. VE SAN. A.Ş."
+    },
+    {
+      "kod": "M0142",
+      "ad": "NEO OTOMOTİV SATIŞ VE PAZARLAMA A.Ş."
+    },
+    {
+      "kod": "M0229",
+      "ad": "NET ÇÖZÜMLER PROJE BİLGİSAYAR DANIŞMANLIK  SAĞLIK HİZ. İNŞAAT TAAH. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0291",
+      "ad": "NET MAK METAL MAKİNA SANAYİ VE TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0429",
+      "ad": "NET1 TEKNOLOJİ BİLİŞİM DANIŞMANLIK HİZMETLERİ - ZERRİN KÖSEOĞLU"
+    },
+    {
+      "kod": "M0222",
+      "ad": "NETAMAR DENİZCİLİK VE TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0400",
+      "ad": "NETCOLLEC BİLİŞİM VE YAZILIM DANIŞMANLIK HİZMETLERİ SANAYİ VE TİCARET LTD.ŞTİ."
+    },
+    {
+      "kod": "M0012",
+      "ad": "NETCOM BİLİŞİM PROJE VE DANIŞMANLIK - DEVRİM GÜLLE"
+    },
+    {
+      "kod": "S0009",
+      "ad": "NETCOM BİŞİM PROJE VE DANIŞMANLIK"
+    },
+    {
+      "kod": "M0433",
+      "ad": "NETLINE BİLGİ İŞLEM BİLGİSAYAR DONANIM VE PROG.HİZM.TİC.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0134",
+      "ad": "NETPİA İNTERNET HİZMETLERİ PAZARLAMA A.Ş."
+    },
+    {
+      "kod": "S0110",
+      "ad": "NETSENSE YAZILIM PROJE VE DANIŞMANLIK LTD. ŞTİ."
+    },
+    {
+      "kod": "S0001",
+      "ad": "NETSİS YAZILIM SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0153",
+      "ad": "NMT NİDEK MEDİKAL TEKNİK LTD. ŞTİ."
+    },
+    {
+      "kod": "M0265",
+      "ad": "NOKTA ISI MALZEMELERİ İMALAT PAZARLAMA SANAYİ TİCARET LTD.ŞTİ."
+    },
+    {
+      "kod": "M0150",
+      "ad": "NOVOZYMES ENZİM DIŞ TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0506",
+      "ad": "NUVİTA İLAÇ VE KİMYA SANAYİ TİC. A.Ş."
+    },
+    {
+      "kod": "M0543",
+      "ad": "NİL TEKSTİL SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0340",
+      "ad": "NİMET GIDA SANAYİ  VE TİCARET A.Ş"
+    },
+    {
+      "kod": "M0199",
+      "ad": "NİPAR OTOMOTİV SAN. TİC. A.Ş."
+    },
+    {
+      "kod": "S0054",
+      "ad": "NİRVANA BİLGİSAYAR YAZILIM DANIŞMANLIK SAN.TİC LTD. ŞTİ."
+    },
+    {
+      "kod": "M0020",
+      "ad": "NİVEKO MAKİNA TİCARET A.Ş."
+    },
+    {
+      "kod": "M0502",
+      "ad": "ÖMER HELVACI"
+    },
+    {
+      "kod": "S0128",
+      "ad": "ÖMER ÖMEROĞLU ERVA YAPI"
+    },
+    {
+      "kod": "M0212",
+      "ad": "OMNİTEK BİLİŞİM VE İLETİŞİM TEKNOLOJİLERİ SAN. TİC. A.Ş."
+    },
+    {
+      "kod": "M0414",
+      "ad": "ÖMÜR ÇELİK A.Ş."
+    },
+    {
+      "kod": "S0012",
+      "ad": "ÖNTEL ELEKTRONİK İŞ.GÜV.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0454",
+      "ad": "OPTİKON TEKNOLOJİ LTD.ŞTİ."
+    },
+    {
+      "kod": "M0470",
+      "ad": "OPTİİM İŞ ÇÖZÜMLERİ A.Ş."
+    },
+    {
+      "kod": "S0149",
+      "ad": "ORHAN ÖZER (YAĞ SATICISI)"
+    },
+    {
+      "kod": "M0239",
+      "ad": "ÖRSAN SIHHİ TESİSAT VE İNŞAAT MALZ. İMALAT İTHALAT İHRACAT TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0268",
+      "ad": "ORTEKS TEKSTİL SAN.TİC.VE MÜMESSİLLİK A.Ş."
+    },
+    {
+      "kod": "M0041",
+      "ad": "ORİON İŞ KORUYUCU EKİP TİC ."
+    },
+    {
+      "kod": "M0550",
+      "ad": "OSHINO OTOMOTİV ENDÜSTRİ ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "M0097",
+      "ad": "OSKAR METAL SANAYİ VE TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "S0138",
+      "ad": "OSMAN ÖZYİĞİT (KAPORTACI)"
+    },
+    {
+      "kod": "M0260",
+      "ad": "OTO SOYLU OTOMOTİV SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0307",
+      "ad": "OTO İSMAİL OTOMOTİV SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0236",
+      "ad": "OTOMAT METAL SANAYİ VE TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0293",
+      "ad": "OTTO MEDİKAL LTD.ŞTİ."
+    },
+    {
+      "kod": "M0459",
+      "ad": "ÖZBİR VAGON ARAÇ MAKİNA İMALAT İNŞAAT TİCARET VE SANAYİ A.Ş"
+    },
+    {
+      "kod": "M0165",
+      "ad": "ÖZDEN KİMYA VE PLASTİK SANAYİ LTD. ŞTİ."
+    },
+    {
+      "kod": "M0103",
+      "ad": "ÖZEL YAŞAR HASTANESİ TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0466",
+      "ad": "ÖZGÜREVA PAZARLAMA TEKSTİL HAMMADDE SANAYİ VE TİC. LTD.ŞTİ."
+    },
+    {
+      "kod": "M0501",
+      "ad": "ÖZHASER GIDA SAN. VE DIŞ TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0045",
+      "ad": "ÖZKA FABRİKA MALZEMELERİ VE TAKIM SAN. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0269",
+      "ad": "ÖZKA İNŞAAT A.Ş."
+    },
+    {
+      "kod": "S0049",
+      "ad": "ÖZKAN ŞAHİN - MİO PLUS"
+    },
+    {
+      "kod": "M0058",
+      "ad": "ÖZKAYALAR ZÜCCACİYE PLAS. METAL ÜRÜN. SAN. DIŞ. TİC. LTD.ŞTİ."
+    },
+    {
+      "kod": "M0565",
+      "ad": "ÖZKÖK TEKSTİL İPLİK SANAYİ VE TİCARET ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "M0503",
+      "ad": "ÖZKURT OTOMOTİV SAN.VE TİC.A.Ş."
+    },
+    {
+      "kod": "M0015",
+      "ad": "ÖZMAK GRUP MÜHENDİSLİK VE MAKİNA SAN. TİC. A.Ş."
+    },
+    {
+      "kod": "M0321",
+      "ad": "ÖZMETAL PASLANMAZ ÇELİK SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0018",
+      "ad": "ÖZSER TURİZM TAŞIMACILIK YATIRIMLARI TİC. SAN. A.Ş"
+    },
+    {
+      "kod": "M0121",
+      "ad": "PAKTEK PAKETLEME SİSTEMLERİ SAN. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0132",
+      "ad": "PAPER PACK MATBAACILIK SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0513",
+      "ad": "PARKES PLASTİK VE AMB. SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0217",
+      "ad": "PARKUR TURİZM VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0220",
+      "ad": "PARTNER OTOMOTİV TİC. A.Ş."
+    },
+    {
+      "kod": "S0015",
+      "ad": "PARİTE BİLGİ VE ARAŞTIRMA DAN.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0328",
+      "ad": "PASS REKLAM ÜRÜNLERİ SAN. DIŞ TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0066",
+      "ad": "PAVO TEKNİK SERVİS ELEKTRİK ELEKTRONİK SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0205",
+      "ad": "PDA İLETİŞİM HİZMETLERİ VE TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0033",
+      "ad": "PEKİN HAVACILIK VE TURİZM HİZMETLERİ SAN.VE TİC.A.Ş."
+    },
+    {
+      "kod": "M0117",
+      "ad": "PETEK GIDA"
+    },
+    {
+      "kod": "M0143",
+      "ad": "PETROMEKS İNŞAAT PLASTİK TEKSTİL MALZEMELERİ TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0252",
+      "ad": "PHARMATECH İLAÇ HAMMADDE MAKİNE VE MALZEMELERİ SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0306",
+      "ad": "PLASMAR PLASTİK VE KİMYA SANAYİ VE DIŞ TİCARET A.Ş."
+    },
+    {
+      "kod": "M0431",
+      "ad": "PLASTAY KİMYA SAN. TİC. A.Ş."
+    },
+    {
+      "kod": "M0193",
+      "ad": "PLASTİFAY KİMYA ENDÜSTRİSİ A.Ş."
+    },
+    {
+      "kod": "M0564",
+      "ad": "PLATİN GRUP KİMYA ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "M0505",
+      "ad": "PLATİN KİMYA MÜMESSİLLİK VE DIŞ TİCARET A.Ş."
+    },
+    {
+      "kod": "M0295",
+      "ad": "POLARON BOYA KİMYA SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0457",
+      "ad": "POLAT TOWER RESİDENCE YÖNETİCİLİĞİ"
+    },
+    {
+      "kod": "S0098",
+      "ad": "POLAT TURİZM OTELCİLİK TİCARET VE SANAYİ A.Ş."
+    },
+    {
+      "kod": "M0284",
+      "ad": "POLAT İNSAAT MALZEMELERİ TİC. A.Ş."
+    },
+    {
+      "kod": "M0313",
+      "ad": "POLAT İŞ MERKEZİ YÖNETİMİ"
+    },
+    {
+      "kod": "M0488",
+      "ad": "PONS OTOMASYON VE TEKNOLOJİ SİSTEMLERİ İNŞAAT SAN.VE TİC.LTD. ŞTİ."
+    },
+    {
+      "kod": "S0003",
+      "ad": "PORTFOY YAZILIM LTD.ŞTİ."
+    },
+    {
+      "kod": "S0083",
+      "ad": "POSTA VE TELGRAF TEŞKİLATI A.Ş."
+    },
+    {
+      "kod": "M0318",
+      "ad": "POZİTİF KAYNAK - ZEYNEP COŞKUN"
+    },
+    {
+      "kod": "S0108",
+      "ad": "PREMİERDC VERİ MERKEZİ A.Ş."
+    },
+    {
+      "kod": "M0568",
+      "ad": "PRO-PACK PLASTİK AMBALAJ VE MAKİNA SANAYİ TİCARET A.Ş."
+    },
+    {
+      "kod": "S0077",
+      "ad": "PRO-TEK OTO KORUMA VE GELİŞTİRME SAN. TİC. LTD. ŞT"
+    },
+    {
+      "kod": "M0392",
+      "ad": "PRODATA TELEKOMÜNİKASYON ELEKTRONİK PROJE & DANIŞMANLIK SAN. TİC. LTD. ŞTİ"
+    },
+    {
+      "kod": "M0095",
+      "ad": "PROMART DIŞ TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "S0075",
+      "ad": "PRONET GÜVENLİK HİZMETLERİ A.Ş."
+    },
+    {
+      "kod": "M0171",
+      "ad": "PROSET YAZILIM SAN.TİC A.Ş"
+    },
+    {
+      "kod": "S0023",
+      "ad": "PRİMA UYGULAMA ATÖLYESİ"
+    },
+    {
+      "kod": "M0415",
+      "ad": "PRİMO AMBALAJ VE KİMYA SAN.TİC.A.Ş"
+    },
+    {
+      "kod": "M0554",
+      "ad": "PİLSAN ELEKTRONİK SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0487",
+      "ad": "QP BİLİŞİM ELEKTRONİK HİZM. İÇ VE DIŞ TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0018",
+      "ad": "RADİKS LTD.ŞTİ. - AĞAÇKANAN"
+    },
+    {
+      "kod": "M0108",
+      "ad": "RAMATEKS METAL SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0129",
+      "ad": "REAL FARMA İLAÇ SANAYİ TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0332",
+      "ad": "REEL GAYRİMENKUL DEĞERLEME A.Ş."
+    },
+    {
+      "kod": "M0280",
+      "ad": "RESTİJ İNŞAAT TURZ. SAN. VE TİC. DIŞ.TİC.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0209",
+      "ad": "REUTERS ENFORMASYON LTD.STI."
+    },
+    {
+      "kod": "M0348",
+      "ad": "RICHARD GİNORİ 1735 TR PORSELEN VE HEDİYELİK EŞYA  İTH.İHR.SAN.VE TİC.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0354",
+      "ad": "ROSSO RESTORAN İŞLETMECİLİĞİ LTD. ŞTİ."
+    },
+    {
+      "kod": "M0315",
+      "ad": "ROZA PLASTİK SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0025",
+      "ad": "RSM TURKEY YEMİNLİ MALİ MÜŞAVİRLİK ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "M0422",
+      "ad": "S.S TRİKO DOKUMACILARI KSS YAPI KOOPERATİFİ"
+    },
+    {
+      "kod": "M0075",
+      "ad": "SAFRAN DIŞ TİCARET LTD. ŞTİ"
+    },
+    {
+      "kod": "M0231",
+      "ad": "SAFİ DERİCİLİK HALICILIK TURİZM SANAYİ VE TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0458",
+      "ad": "SAFİ DERİNCE ULUSLARARASI LİMAN İŞLETMECİLİĞİ A.Ş."
+    },
+    {
+      "kod": "M0290",
+      "ad": "SAKA KOZMETİK PAZARLAMA VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0467",
+      "ad": "SAM TEKNİK MUTFAK EKİPMANLARI SANAYİ VE TİCARET LTD.ŞTİ."
+    },
+    {
+      "kod": "S0139",
+      "ad": "SAMET AFACAN"
+    },
+    {
+      "kod": "S0027",
+      "ad": "SATEL TELEKOMÜNİKASYON - TAHSİN TAŞKIRAN"
+    },
+    {
+      "kod": "S0136",
+      "ad": "SAVAŞ YILDIRIMOĞLU (KEMER LASTİK)"
+    },
+    {
+      "kod": "M0377",
+      "ad": "SAY TIBBİ ARAŞTIRMA YATIRIM SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0343",
+      "ad": "SAYGI DOĞALGAZ İKLİMLENDİRME MÜHENDİSLİK İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ"
+    },
+    {
+      "kod": "M0490",
+      "ad": "SCT MÜHENDİSLİK KALIP İNŞ. SOS.HİZ.OTOMOTİV SAN.TİC. TD. ŞTİ."
+    },
+    {
+      "kod": "S0031",
+      "ad": "SEKMAN MATBAASI - İBRAHİM AKTAŞ"
+    },
+    {
+      "kod": "M0432",
+      "ad": "SEKON KAYNAK ELEMANLARI SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0180",
+      "ad": "SELECT BİLGİ TEKNOLOJİLERİ - GÖKHAN GİRGİN"
+    },
+    {
+      "kod": "M0355",
+      "ad": "SELEKTİF MEDYA LTD. ŞTİ."
+    },
+    {
+      "kod": "M0136",
+      "ad": "SELİN REKLAM VE BİLGİSAYAR - GÜNAY HACI"
+    },
+    {
+      "kod": "M0312",
+      "ad": "SEM PLASTİK SAN. VE TİC. A.Ş."
+    },
+    {
+      "kod": "M0349",
+      "ad": "SEMA KIRTASİYE - MURAT SALMAN"
+    },
+    {
+      "kod": "M0352",
+      "ad": "SEMİH TAŞ"
+    },
+    {
+      "kod": "M0116",
+      "ad": "SENA OFSET AMBALAJ MATBAACILIK SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0359",
+      "ad": "SENA TEKSTİL KONFEKSİYON KUMAŞ TOPTAN VE PEREKENDE TİCARETİ - ENVER KARAMAN - ÖMER TOPAL ORTAKLIĞI"
+    },
+    {
+      "kod": "M0511",
+      "ad": "SENSİENT KOKU VE PARFÜMLERİ ENDÜSTRİ VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0087",
+      "ad": "SENTIA BİLİŞİM SAN.TİC.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0166",
+      "ad": "SERDAR TURĞUT"
+    },
+    {
+      "kod": "M0046",
+      "ad": "SERMETAL A.Ş"
+    },
+    {
+      "kod": "M0051",
+      "ad": "SERVER BOYA MATBAA MÜREKKEPLERİ VERNİK SAN. A.Ş"
+    },
+    {
+      "kod": "M0152",
+      "ad": "SESOFT BİLGİSAYAR YAZILIM DONANIM VE OTOMOTİV SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0403",
+      "ad": "SET YÖNETİM VE DANIŞMANLIK LTD. ŞTİ."
+    },
+    {
+      "kod": "M0548",
+      "ad": "SEZGİN YILDIRIM"
+    },
+    {
+      "kod": "M0126",
+      "ad": "SINAİ KİMYA A.Ş"
+    },
+    {
+      "kod": "S0032",
+      "ad": "SODEXO AVANTAJ VE ÖDÜLLENDİRME HİZMETLERİ A.Ş."
+    },
+    {
+      "kod": "S0078",
+      "ad": "SOFTECH BİLGİ İŞLEM - MEHMET KAÇAR"
+    },
+    {
+      "kod": "M0526",
+      "ad": "SOFTWARE ARGE SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "S0097",
+      "ad": "SOFTWARE ARGE SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0353",
+      "ad": "SOLGAR VİTAMİN VE SAĞLIK ÜRÜNLERİ SAN.TİC.A.Ş."
+    },
+    {
+      "kod": "M0448",
+      "ad": "SOMA KÖMÜR İŞLETMELERİ A.Ş."
+    },
+    {
+      "kod": "M0379",
+      "ad": "SOTEK SOĞUTMA VE TEKNİK TESİSAT İNŞAAT SANAYİ TİCARET LİMİTED ŞİRKETİ"
+    },
+    {
+      "kod": "M0500",
+      "ad": "STAR OYUN ALETLERİ OYUNCAK İMALAT PAZ. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0282",
+      "ad": "STARCOM MEDYA HİZMETLERİ A.Ş."
+    },
+    {
+      "kod": "M0480",
+      "ad": "STARWOOD YAPI MARKETLERİ YAPI MALZEMELERİ SAN. VE TİC. A.Ş."
+    },
+    {
+      "kod": "M0289",
+      "ad": "STEEL ALLOY ÇELİK İŞLEME SANAYİ TİCARET A.Ş."
+    },
+    {
+      "kod": "M0016",
+      "ad": "STG  HOTEL VE  SERVİSLERİ  A.Ş."
+    },
+    {
+      "kod": "M0017",
+      "ad": "STG ENTERNASYONEL TURİZM TİC.A.Ş."
+    },
+    {
+      "kod": "S0069",
+      "ad": "SUMO ELEKTRONİK VE BİLGİSAYAR SANAYİ VE TİCARET LTD.ŞTİ."
+    },
+    {
+      "kod": "M0350",
+      "ad": "SUNTEKS TEKSTİL SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0339",
+      "ad": "SİENZİ LOJİSTİK ANTREPO VE DIŞ TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0118",
+      "ad": "SİMURG KİTAPÇILIK YAYINCILIK VE DAĞITIM LTD. ŞTİ."
+    },
+    {
+      "kod": "M0509",
+      "ad": "SİMİT AND SMITH İSTANBUL GIDA ÜRETİM VE TİCARET A.Ş"
+    },
+    {
+      "kod": "S0137",
+      "ad": "SİNAN ÇAKAN (ÇIKMA KAPI)"
+    },
+    {
+      "kod": "M0436",
+      "ad": "SİNAN GRUP EĞİTİM HİZMETLERİ VE DIŞ TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0113",
+      "ad": "SİPAHİLER İNŞAAT SANAYİ VE TİC. A.Ş."
+    },
+    {
+      "kod": "00",
+      "ad": "SİPARİŞLER (ZORUNLU TRAFİK - KEP)"
+    },
+    {
+      "kod": "S0037",
+      "ad": "SİSTEM ALÇI DEKORASYON ŞİRİN TOPÇU"
+    },
+    {
+      "kod": "M0233",
+      "ad": "SİSTEM OTOMOTİV TİCARET LİMİTED ŞİRKETİ"
+    },
+    {
+      "kod": "M0405",
+      "ad": "TAÇ MUTFAK EŞYALARI AMBALAJ İNŞAAT İMALAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ"
+    },
+    {
+      "kod": "M0463",
+      "ad": "TAÇ PORSELEN VE MUTFAK EŞYALARI PAZ.DIŞ TİC.LTD.ŞTİ"
+    },
+    {
+      "kod": "M0141",
+      "ad": "TAMER SERBEST MUHASEBECİLİK VE MALİ MÜŞAVİRLİK LTD. ŞTİ."
+    },
+    {
+      "kod": "M0241",
+      "ad": "TASFİYE HALİNDE - ERGİN ULUSLARARASI DENETİM YMMM A.Ş."
+    },
+    {
+      "kod": "M0100",
+      "ad": "TASFİYE HALİNDE - HAIDY LENA MEDİKAL SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0494",
+      "ad": "TASFİYE HALİNDE LCC TELEKOMÜNİKASYON SERVİS LTD. ŞTİ."
+    },
+    {
+      "kod": "M0079",
+      "ad": "TAYAMA ELEKTRİK ELEKTRONİK SAN. GÜV. SİST. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0536",
+      "ad": "TAİBA DIŞ TİCARET VE PLASTİK ÜRÜNLERİ LTD. ŞTİ."
+    },
+    {
+      "kod": "M0522",
+      "ad": "TAİS GEMİ İNŞA VE TEKNOLOJİ A.Ş."
+    },
+    {
+      "kod": "M0249",
+      "ad": "TECHETEK BİLİŞİM VE İLETİŞİM TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0425",
+      "ad": "TEK ÇİZGİ BİLİŞİM SİSTEMLERİ VE TEKNOLOJİLERİ İLHAN BILDIRCIN"
+    },
+    {
+      "kod": "S0051",
+      "ad": "TEKNOSTOK LTD.ŞTİ."
+    },
+    {
+      "kod": "M0173",
+      "ad": "TEKNİK KİMYA DONATIM MAKİNA ENERJİ SANAYİ VE TİC. A.Ş."
+    },
+    {
+      "kod": "M0438",
+      "ad": "TEKNİK PROFİL ALÜMİNYUM SAN. VE DIŞ TİC. A.Ş"
+    },
+    {
+      "kod": "M0516",
+      "ad": "TEKSMARK TEKSTİL SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "S0095",
+      "ad": "TEMEL OTOMOTİV LTD.ŞTİ."
+    },
+    {
+      "kod": "M0050",
+      "ad": "TEMNET İLETİŞİM ÜRÜNLERİ İTHALAT İHR. SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0041",
+      "ad": "TEMİZELLER END.TEM.ÜRÜN.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0473",
+      "ad": "TENEDOS MÜZİK KİTAP - YILDIZ DENİZ"
+    },
+    {
+      "kod": "M0080",
+      "ad": "TEST TÜM ELEKTRONİK SAN. TİC. A.Ş."
+    },
+    {
+      "kod": "M0031",
+      "ad": "TETRA MÜHENDİSLİK MÜŞ. SANAYİ TİCARET A.Ş."
+    },
+    {
+      "kod": "S0048",
+      "ad": "TETRA MÜHENDİSLİK MÜŞ. SANAYİ TİCARET A.Ş."
+    },
+    {
+      "kod": "M0044",
+      "ad": "TEZCAN GALVANİZLİ YAPI ELEMANLARI SAN. VE TİC. A.Ş"
+    },
+    {
+      "kod": "M0008",
+      "ad": "THE CRUISE LINE TURİZM TİCARET A.Ş"
+    },
+    {
+      "kod": "M0275",
+      "ad": "THG TEKSTİL HAMMADDELERİ SAN. VE TİC. A.Ş."
+    },
+    {
+      "kod": "M0308",
+      "ad": "TIGER SHOES AYAK.İTH.İHR.SAN.TİC.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0517",
+      "ad": "TIRTIL KİTAP YAYIN VE MAĞAZACILIK TİCARET ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "S0082",
+      "ad": "TNB BİLGİSAYAR VE GÖRÜNTÜ SİSTEMLERİ A.Ş"
+    },
+    {
+      "kod": "M0119",
+      "ad": "TOKTAŞ KUNDURA KALIPLARI SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0061",
+      "ad": "TOPKAPI İPLİK SANAYİ VE TİCARET A.Ş"
+    },
+    {
+      "kod": "M0357",
+      "ad": "TORNADO BİLGİ İŞLEM DANIŞMANLIK VE ORGANİZASYON HİZMETLERİ LİMİTED ŞİRKETİ"
+    },
+    {
+      "kod": "M0440",
+      "ad": "TP-LINK"
+    },
+    {
+      "kod": "M0369",
+      "ad": "TPH FORKLİFT HİZMETLERİ İÇ VE DIŞ TİCARET LTD.ŞTİ."
+    },
+    {
+      "kod": "M0551",
+      "ad": "TR INTERNATIONAL GAYRİMENKUL DANIŞMANLIK  MÜMESSİLLİK TASARIM TAAHHÜT VE İNŞAAT HİZMETLERİ A.Ş."
+    },
+    {
+      "kod": "M0028",
+      "ad": "TRANS MEDİKAL CİHAZLAR SAN. TİC. İTHALAT İHRACAT LTD. ŞTİ."
+    },
+    {
+      "kod": "M0007",
+      "ad": "TRANS TEO A.Ş."
+    },
+    {
+      "kod": "S0036",
+      "ad": "TREKS SUALTI VE DOĞA SPORLARI MEHMET ALKAN DARCAN"
+    },
+    {
+      "kod": "M0561",
+      "ad": "TREO BİLGİ TEKNOLOJİLERİ ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "S0104",
+      "ad": "TT MOBİL İLETİŞİM HİZMETLERİ A.Ş."
+    },
+    {
+      "kod": "S0059",
+      "ad": "TTNET A.Ş."
+    },
+    {
+      "kod": "M0492",
+      "ad": "TÜM-MED SAĞLIK KONT MER A.Ş. VE DOKTORLAR SAĞLIK YAT.SAN. VE TİC A.Ş. ORTAK GİRİŞİMİ"
+    },
+    {
+      "kod": "M0464",
+      "ad": "TÜM-MED SAĞLIK KONTROL MERKEZİ A.Ş."
+    },
+    {
+      "kod": "M0523",
+      "ad": "TÜMER ŞENEL - ENGÜÇLÜ BİLİŞİM VE İNTERNET HİZMETLERİ"
+    },
+    {
+      "kod": "M0168",
+      "ad": "TUREZ TURİZM REZERVASYON SİSTEMLERİ VE YAZILIM LTD. ŞTİ."
+    },
+    {
+      "kod": "S0058",
+      "ad": "TÜRK TELEKOMÜNİKASYON A.Ş."
+    },
+    {
+      "kod": "S0072",
+      "ad": "TURKNET İLETİŞİM HİZMETLERİ A.Ş."
+    },
+    {
+      "kod": "S0045",
+      "ad": "TÜRKTİCARET.NET YAZILIM HİZMETLERİ SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0207",
+      "ad": "TÜRKİYE TURİNG OTOMOBİL KURUMU TURİSTİK TEKNİK TRİPTİK VE YAYIN İŞLETMELERİ"
+    },
+    {
+      "kod": "S0145",
+      "ad": "TURPAK ELEKTROMANYETİK YAKIT İKMAL SİSTEMLERİ TİCARET ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "S0114",
+      "ad": "TURTALYA ARAÇ MUAYENE İSTASYONU A.Ş."
+    },
+    {
+      "kod": "S0091",
+      "ad": "TÜVTÜRK İSTANBUL TAŞIT MUAYENE İSTASYONLARI İŞLETİM A.Ş."
+    },
+    {
+      "kod": "S0153",
+      "ad": "TUĞBA YILDIRIM"
+    },
+    {
+      "kod": "M0299",
+      "ad": "TİLAGA TURİZM MADENCİLİK YATIRIM VE İŞLETMECİLİĞİ A.Ş."
+    },
+    {
+      "kod": "S0089",
+      "ad": "TİLLO GRUP SİGORTA ARACILIK.HİZ.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0527",
+      "ad": "ÜÇAY MÜHENDİSLİK DOĞAL GAZ MAKİNE İNŞAAT BİLİŞİM SANAYİ VE TİCARET ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "M0135",
+      "ad": "ÜÇAY MÜHENDİSLİK DOĞALGAZ MAKİNA İNŞAAT BİLİŞİM SANAYİ VE TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0298",
+      "ad": "UFO IŞIKLA ISITMA SİSTEMLERİ SANAYİ  VE TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "S0096",
+      "ad": "UFUK DOĞAN"
+    },
+    {
+      "kod": "M0149",
+      "ad": "ULUBAŞ METAL SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0245",
+      "ad": "ÜMRAN ÇELİK BORU SAN. A.Ş."
+    },
+    {
+      "kod": "S0017",
+      "ad": "V.ATIL TORTUMLU"
+    },
+    {
+      "kod": "M0497",
+      "ad": "VEÇ VERİMLİ ENERJİ ÇÖZÜMLERİ ANONİM ŞİRKETİ ŞİRKETİ"
+    },
+    {
+      "kod": "M0496",
+      "ad": "VEFA OTOMOTİV SANAYİ VE TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0240",
+      "ad": "VENA TEKSTİL SANAYİ TİCARET A.Ş."
+    },
+    {
+      "kod": "S0127",
+      "ad": "VEYSEL MORKOÇ"
+    },
+    {
+      "kod": "S0129",
+      "ad": "VEYSİ TELVİN"
+    },
+    {
+      "kod": "S0070",
+      "ad": "VODAFONE"
+    },
+    {
+      "kod": "M0452",
+      "ad": "VOGEL SPOR TEKSTİL DIŞ TİC.VE SAN. LTD.ŞTİ."
+    },
+    {
+      "kod": "M0333",
+      "ad": "VİASOFT BİLGİSAYAR PROGRAMCILIK LTD.ŞTİ."
+    },
+    {
+      "kod": "M0138",
+      "ad": "VİKİNG TURİZM VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0380",
+      "ad": "VİVET KOZMETİK PAZARLAMA TURİZM İNŞ. TAAH. TİC. VE SAN. A.Ş."
+    },
+    {
+      "kod": "M0277",
+      "ad": "VİZYON COLLECTION LTD. ŞTİ."
+    },
+    {
+      "kod": "M0230",
+      "ad": "WAGNER BOYA VE KİMYA SANAYİ TİCARET A.Ş."
+    },
+    {
+      "kod": "M0105",
+      "ad": "WILLPÜTZ DIŞ TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0009",
+      "ad": "YAKAMOZ CATERING"
+    },
+    {
+      "kod": "M0469",
+      "ad": "YAKUP 2 RESTAURANT GIDA KAFE BAR TURİZM İŞLT. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0335",
+      "ad": "YALÇIN DERİ SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0036",
+      "ad": "YALÇIN KİMYA TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0383",
+      "ad": "YALIN YAZILIM PROJE VE DANIŞMANLIK HİZMETLERİ TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0057",
+      "ad": "YALIN YAZILIM PROJE VE DANIŞMANLIK HİZMETLERİ TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0120",
+      "ad": "YAVUZ BOYRAZ"
+    },
+    {
+      "kod": "M0453",
+      "ad": "YAYIMCI MESLEK BİRLİKLERİ FEDERASYONU YAYFED"
+    },
+    {
+      "kod": "M0310",
+      "ad": "YDS YAZILIM DONANIM SERVİS HİZ. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0274",
+      "ad": "YEDİTUR TURİZM VE TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0499",
+      "ad": "YENİ ANADOLU MADENCİLİK VE TEKNOLOJİLERİ SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0014",
+      "ad": "İHLAS MARMARA EVLERİ 2. KISIM SİTE YÖNETİMİ"
+    },
+    {
+      "kod": "S0106",
+      "ad": "YILKARLAS OTOMOTİV LTD.ŞTİ."
+    },
+    {
+      "kod": "M0395",
+      "ad": "İKON TARIM ÜRÜNLERİ GIDA TAŞIMACILIK VE MEDİKAL SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0086",
+      "ad": "İKS İLETİŞİM KONSEPT STRATEJİ VE TURZ. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0164",
+      "ad": "İLERİ ELEKTROKİMYA SANAYİ  VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0181",
+      "ad": "İLKAY TİMURKAYNAK"
+    },
+    {
+      "kod": "M0276",
+      "ad": "İMM SATIŞ PAZARLAMA VE DIŞ TİCARET LTD. ŞTİ."
+    },
+    {
+      "kod": "M0068",
+      "ad": "İNNCREA KİMYA MAKİNA YAZILIM ELEKTRONİK SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0110",
+      "ad": "İNTER MOBİL SANAYİ VE TİCARET A.Ş."
+    },
+    {
+      "kod": "M0238",
+      "ad": "İNTER PARTNER ASSISTANCE YARDIM VE DESTEK HİZMETLERİ LTD. ŞTİ."
+    },
+    {
+      "kod": "M0326",
+      "ad": "İNTERKOMBİNE  KAYNAK EKİPMANLARI SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0070",
+      "ad": "İNTERMAT AMBALAJ A.Ş."
+    },
+    {
+      "kod": "M0477",
+      "ad": "İNTRAFARMA İLAÇ SAN. TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0056",
+      "ad": "YOUNG & RUBICAM REKLAMEVİ REKLAMCILIK LTD. ŞTİ."
+    },
+    {
+      "kod": "M0221",
+      "ad": "İPAŞ İPEK MOBİLYA PAZARLAMA İTH. İHR. TİC A.Ş."
+    },
+    {
+      "kod": "S0148",
+      "ad": "İSMET ÖZTÜRK İTH.PAZ.LTD.ŞTİ.(YEDEK PARÇACI)"
+    },
+    {
+      "kod": "M0515",
+      "ad": "İSTANBUL ANADOLU 3.İFLAS MÜDÜRLÜĞÜ 2016/33 SAYILI İFLAS DOSYASI"
+    },
+    {
+      "kod": "M0224",
+      "ad": "İSTANBUL ELEKTRONİK VE AYDINLATMA MALZEMELERİ TİC. SAN. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0283",
+      "ad": "İSTANBUL KAVRAM MESLEK YÜKSEKOKULU"
+    },
+    {
+      "kod": "S0060",
+      "ad": "İSTANBUL SU VE KANALİZASYON İDARESİ - İSKİ"
+    },
+    {
+      "kod": "M0055",
+      "ad": "İSTANBUL YİYECEK İÇECEK GIDA REKLAM VE PRODÜKSİYON HİZM. SAN. TİC. A.Ş"
+    },
+    {
+      "kod": "S0154",
+      "ad": "YÜKSEL AKTAŞ"
+    },
+    {
+      "kod": "M0424",
+      "ad": "YUMURCAK YAYINLARI YAYIN EĞİTİM VE BİLİŞİM HİZM. SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "S0092",
+      "ad": "YURTİÇİ KARGO SERVİSİ A.Ş."
+    },
+    {
+      "kod": "S0147",
+      "ad": "YUSUF KELLEKULA (FAR)"
+    },
+    {
+      "kod": "S0117",
+      "ad": "YUSUF ÖZGÜR AKAR"
+    },
+    {
+      "kod": "S0103",
+      "ad": "YUSUF SARI (SIGORTA ACENTASI)"
+    },
+    {
+      "kod": "M0559",
+      "ad": "YUSUF YAŞAR"
+    },
+    {
+      "kod": "S0038",
+      "ad": "ZEMİN İNŞ.ELEKTRİK.HAKAN DEMİRAY"
+    },
+    {
+      "kod": "M0540",
+      "ad": "ZEYMEL İÇ VE DIŞ TİCARET ANONİM ŞİRKETİ"
+    },
+    {
+      "kod": "M0188",
+      "ad": "ZEYNEP TEKSTİL PAZ. SAN. VE TİC. A.Ş."
+    },
+    {
+      "kod": "S0156",
+      "ad": "ZF SERVICES TURK SAN. VE TİC. A.Ş."
+    },
+    {
+      "kod": "S0131",
+      "ad": "ZİHNİ EKŞİ"
+    },
+    {
+      "kod": "M0301",
+      "ad": "ZİHNİ MÜZİK MERKEZİ - ZİHNİ ŞAHİN"
+    },
+    {
+      "kod": "S0042",
+      "ad": "ŞAHKAN OTOMOTİV SAN. VE TİC. LTD. ŞTİ."
+    },
+    {
+      "kod": "M0187",
+      "ad": "ŞENSES KIRTASİYE BÜRO MALZ.SAN.TİC.LTD.ŞTİ."
+    },
+    {
+      "kod": "M0077",
+      "ad": "ŞÜKRÜOĞULLARI NAKLİYAT TURİZM TİC. LTD. ŞTİ."
+    }
+  ],
+  "stoklar": [
+    {
+      "kod": "A0003",
+      "ad": "AYLIK DESTEK GARANTİ PAKETİ BEDELİ"
+    },
+    {
+      "kod": "A0004",
+      "ad": "AYLIK DESTEK GARANTİ PAKETİ BEDELİ"
+    },
+    {
+      "kod": "B0001",
+      "ad": "BACKUP ALMA VE HİZMET BEDELİ (10 GB)"
+    },
+    {
+      "kod": "B0002",
+      "ad": "BACKUP ALMA VE HİZMET BEDELİ (20 GB)"
+    },
+    {
+      "kod": "B0003",
+      "ad": "BACKUP ALMA VE HİZMET BEDELİ (30 GB)"
+    },
+    {
+      "kod": "L0008",
+      "ad": "MS SQL CAL STANDARD RUNTIME 2014"
+    },
+    {
+      "kod": "L0010",
+      "ad": "MS SQL CAL STANDARD RUNTIME 2016"
+    },
+    {
+      "kod": "L0001",
+      "ad": "MS SQL SE RUNTIME LİSANSI"
+    },
+    {
+      "kod": "L0007",
+      "ad": "MS SQL SERVER STANDARD RUNTIME 2014"
+    },
+    {
+      "kod": "L0009",
+      "ad": "MS SQL SERVER STANDARD RUNTIME 2016"
+    },
+    {
+      "kod": "L0002",
+      "ad": "MS SQL SERVER2008 R2 EXPRESS EDITION"
+    },
+    {
+      "kod": "L0006",
+      "ad": "MİCROSOFT SQL CAL RUNTİME 2014 ALL LNG EMBED. MİCROSOFT VOL. LİCENSE 1 LİCENSE-STND"
+    },
+    {
+      "kod": "L0005",
+      "ad": "MİCROSOFT SQL SERVER STNDRD.EDİTİON RUN. 2014 ALL LNG EMBED. MİCROSOFT VOL.LİCENSE 1 LİCENSE 1CLİENT"
+    },
+    {
+      "kod": "L0003",
+      "ad": "SQL EXPRESS EDITION"
+    },
+    {
+      "kod": "L0004",
+      "ad": "SQLCALRUNTİME 2012 ALNG EMB MVL"
+    }
+  ]
 }
