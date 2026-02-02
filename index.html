@@ -371,9 +371,10 @@
 <body>
   <div class="header">
     <h1>Mersel Sipariş</h1>
-    <p>Hızlı ve Akıllı Sipariş Yönetimi <span class="version">v2.0.7</span></p>
-    <div id="debug-info" style="font-size: 9px; color: var(--tg-theme-hint-color); opacity: 0.7; margin-top: -8px;">ID:
-      Algılanıyor...</div>
+    <p>Hızlı ve Akıllı Sipariş Yönetimi <span class="version">v2.0.8</span></p>
+    <div id="debug-info"
+      style="font-size: 9px; color: var(--tg-theme-hint-color); opacity: 0.7; margin-top: -8px; white-space: pre-wrap; word-break: break-all;">
+      ID: Bekleniyor...</div>
   </div>
 
   <div class="card">
@@ -519,23 +520,42 @@
       setupAutocomplete(cariInput, cariList, preloadData.cariler, "cari");
       setupAutocomplete(stokInput, stokList, preloadData.stoklar, "stok");
 
-      // Telegram ID ile eşleşen Cariyi default getir
-      if (tg.initDataUnsafe && tg.initDataUnsafe.user) {
-        const userId = String(tg.initDataUnsafe.user.id);
-        const autoCari = preloadData.cariler.find(c => c.uid && String(c.uid).trim() === userId.trim());
+      // Telegram ID Algılama Fonksiyonu (Gecikmeli ve Tekrar Denemeli)
+      function detectTelegramUser(retryCount = 0) {
+        console.log(`ID Denemesi #${retryCount + 1}`);
 
-        if (autoCari) {
-          selectedCari = autoCari;
-          cariInput.value = autoCari.ad;
-          debugInfo.innerText = `ID: ${userId} | Cari: ${autoCari.kod}`;
-          validateForm();
-        } else {
-          debugInfo.innerText = `ID: ${userId} | Cari: Bulunamadı`;
+        const unsafe = tg.initDataUnsafe || {};
+        const user = unsafe.user;
+        const chatType = unsafe.chat_type || "Bilinmiyor";
+
+        if (user && user.id) {
+          const userId = String(user.id);
+          const autoCari = preloadData.cariler.find(c => c.uid && String(c.uid).trim() === userId.trim());
+
+          if (autoCari) {
+            selectedCari = autoCari;
+            cariInput.value = autoCari.ad;
+            debugInfo.innerText = `ID: ${userId} | Cari: ${autoCari.kod} | Tip: ${chatType}`;
+            validateForm();
+          } else {
+            debugInfo.innerText = `ID: ${userId} | Cari: Bulunamadı | Tip: ${chatType}`;
+          }
+          return true;
         }
-      } else {
-        debugInfo.innerText = "ID: Algılanamadı (Tarayıcı modunda çalışıyor)";
+
+        // Eğer bulunamadıysa ve deneme hakkı varsa tekrar dene
+        if (retryCount < 5) {
+          debugInfo.innerText = `ID: Bekleniyor... (${retryCount + 1})`;
+          setTimeout(() => detectTelegramUser(retryCount + 1), 500);
+          return false;
+        }
+
+        // 5 deneme sonunda hala yoksa
+        debugInfo.innerText = `ID: Algılanamadı! (Veri Yok) | Tip: ${chatType}`;
+        return false;
       }
 
+      detectTelegramUser();
       generateOrderId();
     }
 
