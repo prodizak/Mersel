@@ -364,7 +364,7 @@
   <body>
     <div class="header">
       <h1>Mersel Sipariş</h1>
-      <p>Hızlı ve Akıllı Sipariş Yönetimi <span class="version">v2.0.2</span></p>
+      <p>Hızlı ve Akıllı Sipariş Yönetimi <span class="version">v2.0.3</span></p>
     </div>
 
     <div class="card">
@@ -439,7 +439,6 @@
       <div class="summary-badge" id="order-id-display">
         Sipariş ID: Bekleniyor...
       </div>
-    </div>
     </div>
 
     <script>
@@ -597,7 +596,14 @@
         addBasketBtn.disabled = !isAddValid;
 
         const isSubmitValid = selectedCari && basket.length > 0 && tarihInput.value;
-        submitBtn.disabled = !isSubmitValid;
+        
+        // Native Telegram Main Button kullanımı
+        if (isSubmitValid) {
+          tg.MainButton.text = "SİPARİŞİ ONAYLA (" + basket.length + " Ürün)";
+          tg.MainButton.show();
+        } else {
+          tg.MainButton.hide();
+        }
 
         // Eğer inputlar elle silindiyse seçileni temizle
         if (cariInput.value === "") selectedCari = null;
@@ -662,26 +668,53 @@
       };
 
       // Gönderme İşlemi
-      submitBtn.onclick = () => {
-        const data = {
-          order_id: currentOrderId,
-          customer_code: selectedCari.kod,
-          customer_name: selectedCari.ad,
-          order_date: tarihInput.value,
-          basket: basket.map(i => ({
-            product_code: i.stok_kodu,
-            product_name: i.stok_adi,
-            quantity: i.miktar
-          })),
-          timestamp: new Date().toISOString(),
-        };
+      const sendSiparis = () => {
+        try {
+          if (!selectedCari) throw new Error("Cari seçilmedi.");
+          if (basket.length === 0) throw new Error("Sepet boş.");
+          
+          const data = {
+            order_id: currentOrderId,
+            customer_code: selectedCari.kod,
+            customer_name: selectedCari.ad,
+            order_date: tarihInput.value,
+            basket: basket.map(i => ({
+              product_code: i.stok_kodu,
+              product_name: i.stok_adi,
+              quantity: i.miktar
+            })),
+            timestamp: new Date().toISOString(),
+          };
 
-        btnSpinner.style.display = "inline-block";
-        submitBtn.disabled = true;
+          tg.MainButton.showProgress();
+          tg.MainButton.disable();
 
-        // Telegram'a veriyi gönder
-        tg.sendData(JSON.stringify(data));
+          // Diagnostic: Context check
+          if (tg.initDataUnsafe.receiver && tg.initDataUnsafe.chat_type !== 'sender') {
+             // alert("Uyarı: Bu işlem sadece Bot ile ÖZEL mesajlaşmada çalışır.");
+          }
+
+          console.log("Sending data to bot...", data);
+          tg.sendData(JSON.stringify(data));
+          
+          // Eğer 3 saniye içinde kapanmazsa bir hata olmuş olabilir
+          setTimeout(() => {
+            if (tg.MainButton.isVisible) {
+              tg.MainButton.hideProgress();
+              tg.MainButton.enable();
+              tg.showAlert("Veri gönderilemedi. Lütfen botu özelden (DM) başlattığınızdan ve Keyboard butonu kullandığınızdan emin olun.");
+            }
+          }, 4000);
+          
+        } catch (e) {
+          tg.showAlert("Hata: " + e.message);
+          tg.MainButton.hideProgress();
+          tg.MainButton.enable();
+        }
       };
+
+      tg.onEvent('mainButtonClicked', sendSiparis);
+      submitBtn.onclick = sendSiparis;
 
       // Başlat
       initData();
