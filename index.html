@@ -371,7 +371,7 @@
 <body>
   <div class="header">
     <h1>Mersel Sipariş</h1>
-    <p>Hızlı ve Akıllı Sipariş Yönetimi <span class="version">v2.0.8</span></p>
+    <p>Hızlı ve Akıllı Sipariş Yönetimi <span class="version">v2.0.9</span></p>
     <div id="debug-info"
       style="font-size: 9px; color: var(--tg-theme-hint-color); opacity: 0.7; margin-top: -8px; white-space: pre-wrap; word-break: break-all;">
       ID: Bekleniyor...</div>
@@ -520,25 +520,33 @@
       setupAutocomplete(cariInput, cariList, preloadData.cariler, "cari");
       setupAutocomplete(stokInput, stokList, preloadData.stoklar, "stok");
 
-      // Telegram ID Algılama Fonksiyonu (Gecikmeli ve Tekrar Denemeli)
+      // Telegram ID Algılama Fonksiyonu (URL Parametresi + Telegram API)
       function detectTelegramUser(retryCount = 0) {
         console.log(`ID Denemesi #${retryCount + 1}`);
 
+        // 1. Önce URL'den ID kontrolü (Python Bot'un enjekte ettiği veri)
+        const urlParams = new URLSearchParams(window.location.search);
+        let userId = urlParams.get('uid');
+
+        // 2. URL'de yoksa Telegram API'den dene
         const unsafe = tg.initDataUnsafe || {};
         const user = unsafe.user;
         const chatType = unsafe.chat_type || "Bilinmiyor";
 
-        if (user && user.id) {
-          const userId = String(user.id);
+        if (!userId && user && user.id) {
+          userId = String(user.id);
+        }
+
+        if (userId) {
           const autoCari = preloadData.cariler.find(c => c.uid && String(c.uid).trim() === userId.trim());
 
           if (autoCari) {
             selectedCari = autoCari;
             cariInput.value = autoCari.ad;
-            debugInfo.innerText = `ID: ${userId} | Cari: ${autoCari.kod} | Tip: ${chatType}`;
+            debugInfo.innerText = `ID: ${userId} (URL) | Cari: ${autoCari.kod}`;
             validateForm();
           } else {
-            debugInfo.innerText = `ID: ${userId} | Cari: Bulunamadı | Tip: ${chatType}`;
+            debugInfo.innerText = `ID: ${userId} | Cari: Bulunamadı`;
           }
           return true;
         }
@@ -550,8 +558,7 @@
           return false;
         }
 
-        // 5 deneme sonunda hala yoksa
-        debugInfo.innerText = `ID: Algılanamadı! (Veri Yok) | Tip: ${chatType}`;
+        debugInfo.innerText = `ID: Algılanamadı! | Tip: ${chatType}`;
         return false;
       }
 
